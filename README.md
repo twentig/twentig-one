@@ -95,4 +95,4 @@ Submit bugs and feature requests at [github.com/twentig/twentig-one/issues](http
 
 ## License
 
-Licensed under [GPL-3.0-or-later](LICENSE.txt). Copyright © 2026 Twentig.
+Licensed under [GPL-3.0-or-later](LICENSE). Copyright © 2026 Twentig.
