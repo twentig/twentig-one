@@ -1,0 +1,11 @@
+.wp-block-button.is-style-tw-link .wp-block-button__link {
+	padding: 0;
+	color: currentcolor;
+	border: 0;
+	background: transparent;
+}
+
+.wp-block-button.is-style-tw-link .wp-block-button__link:where(:hover,:focus) {
+	text-decoration: underline;
+	opacity: 1;
+}

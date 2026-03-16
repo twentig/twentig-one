@@ -1,0 +1,14 @@
+.wp-block-read-more {
+	display: block;
+	width: fit-content;
+}
+
+a.wp-block-read-more[style*="border-width"],
+a.wp-block-read-more.has-background {
+	text-decoration: none;
+}
+
+.wp-block-read-more[style*="border-width"]:hover,
+.wp-block-read-more.has-background:hover {
+	opacity: 0.85;
+}

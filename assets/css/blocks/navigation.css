@@ -1,0 +1,71 @@
+.wp-block-navigation:where(:not([class*="has-text-decoration"])) a:not(.wp-element-button):hover,
+.wp-block-navigation .current-menu-item > a {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-underline-offset: 0.25em;
+}
+
+.wp-block-navigation.has-text-decoration-underline .wp-block-navigation-item__content:hover {
+	text-decoration-style: dotted;
+}
+
+.wp-block-navigation.items-justified-center .wp-block-navigation-item__content {
+	text-align: center;
+	justify-content: center;
+}
+
+button.wp-block-navigation-item__content {
+	padding-inline-start: 0;
+}
+
+header .wp-block-navigation:not(.is-vertical) .wp-block-navigation__container > li > :where(.wp-block-navigation-item__content) {
+	padding: 4px 0;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: min(130px, var(--tw-top, 80px)) 0 0;
+	overflow: hidden;
+}
+
+.wp-block-navigation__responsive-container-close {
+	position: fixed;
+}
+
+.has-modal-open .wp-block-navigation__responsive-close {
+	max-width: none;
+}
+
+.is-layout-constrained .alignwide .wp-block-navigation__responsive-dialog {
+	max-width: var(--wp--style--global--wide-size);
+	margin: 0 auto;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-close {
+	padding: 0 var(--wp--style--root--padding-left) var(--wp--preset--spacing--60);
+	overflow: auto;
+	overscroll-behavior: contain;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-dialog {
+	margin-top: 24px;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: 0;
+}
+
+.overlay-center .wp-block-navigation__responsive-container.is-menu-open {
+	justify-content: center;
+}
+
+:is(.tw-nav-hover-box,.tw-nav-active-box) .is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: 10px;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open :where(.wp-block-social-links,.wp-block-search,.wp-block-buttons) {
+	margin-top: 10px;
+}
+
+.wp-block-navigation.has-secondary-color .wp-block-navigation__container {
+	color: unset !important;
+}

@@ -1,0 +1,51 @@
+{
+	"title": "Off-White",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#f4f2ec",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Base 2",
+					"slug": "base-2"
+				},
+				{
+					"color": "#e9e6dd",
+					"name": "Base 3",
+					"slug": "base-3"
+				},
+				{
+					"color": "#222222",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#111111",
+					"name": "Contrast 2",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#00704b",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "color-mix(in srgb, currentColor 65%, transparent)",
+					"name": "Secondary text",
+					"slug": "secondary"
+				},
+				{
+					"color": "color-mix(in srgb, currentColor 20%, transparent)",
+					"name": "Border",
+					"slug": "tertiary"
+				}
+			]
+		}
+	},
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json"
+}

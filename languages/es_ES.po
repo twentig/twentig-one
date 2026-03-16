@@ -1,0 +1,1360 @@
+# Copyright (C) 2026 Twentig
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Twentig One 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/twentig-one\n"
+"POT-Creation-Date: 2026-02-06T13:51:00+00:00\n"
+"PO-Revision-Date: 2026-02-06 15:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: twentig-one\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Twentig One"
+msgstr "Twentig One"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://twentig.com/theme/twentig-one/"
+msgstr "https://twentig.com/theme/twentig-one/"
+
+#. Description of the theme
+#: style.css
+msgid ""
+"Twentig One is a modern and powerful WordPress block theme designed for Full "
+"Site Editing. Featuring flexible templates, post formats, color presets, "
+"font pairings, and fluid typography & spacing, it’s the ideal foundation for "
+"any project. Pair it with the Twentig plugin for starter sites, patterns, "
+"and enhanced blocks to create a stunning website — no code needed."
+msgstr ""
+"Twentig One es un tema de bloques de WordPress moderno y potente, diseñado "
+"para la edición completa del sitio. Con plantillas flexibles, formatos de "
+"entrada, preajustes de color, combinaciones de fuentes y tipografía y "
+"espaciado fluidos, es la base ideal para cualquier proyecto. Combínalo con "
+"el plugin Twentig para obtener sitios de inicio, patrones y bloques "
+"mejorados para crear un sitio web impresionante — sin necesidad de código."
+
+#. Author of the theme
+#: style.css
+msgid "Twentig"
+msgstr "Twentig"
+
+#. Author URI of the theme
+#: style.css
+msgid "https://twentig.com"
+msgstr "https://twentig.com"
+
+#: functions.php:249
+msgid "Link"
+msgstr "Enlace"
+
+#: functions.php:258
+msgid "Stack"
+msgstr "Pila"
+
+#: functions.php:266
+msgid "Pill"
+msgstr "Pastilla"
+
+#: functions.php:605
+msgid "opens in a new tab"
+msgstr "abre en una nueva pestaña"
+
+#: functions.php:666
+msgctxt "Block pattern category"
+msgid "Utilities"
+msgstr "Utilidades"
+
+#: functions.php:709
+msgid "Enable smooth scroll."
+msgstr "Activa el desplazamiento suave."
+
+#: functions.php:710
+msgid "Align overlay content to the center."
+msgstr "Alinea el contenido de la superposición al centro."
+
+#: functions.php:711
+msgid "Show post format icon."
+msgstr "Muestra el icono del formato de entrada."
+
+#: functions.php:712
+msgid "Show post format media (gallery, video, audio)."
+msgstr "Muestra el medio del formato de entrada (galería, vídeo o audio)."
+
+#: functions.php:713
+msgid "Make the header transparent."
+msgstr "Hace que la cabecera sea transparente."
+
+#: functions.php:714
+msgid "Keep original logo colors on transparent header."
+msgstr ""
+"Mantiene los colores originales del logotipo en la cabecera transparente."
+
+#: functions.php:795 patterns/hidden-404.php:19
+msgid "Home"
+msgstr "Inicio"
+
+#: functions.php:798 patterns/sidebar.php:18
+msgid "About"
+msgstr "Acerca de"
+
+#: functions.php:801
+msgid "Services"
+msgstr "Servicios"
+
+#: functions.php:804 patterns/index/hidden-blog-heading.php:10
+msgid "Blog"
+msgstr "Blog"
+
+#: functions.php:807
+msgid "Portfolio"
+msgstr "Proyectos"
+
+#: functions.php:810
+msgid "Work"
+msgstr "Proyectos"
+
+#: functions.php:813
+msgid "Gallery"
+msgstr "Galería"
+
+#: functions.php:816
+msgid "Info"
+msgstr "Información"
+
+#: functions.php:819
+msgid "Company"
+msgstr "Empresa"
+
+#: functions.php:822
+msgid "Contact"
+msgstr "Contacto"
+
+#: inc/welcome-notice.php:49
+msgid "Activate Twentig"
+msgstr "Activar Twentig"
+
+#: inc/welcome-notice.php:52
+msgid "Install Twentig"
+msgstr "Instalar Twentig"
+
+#: inc/welcome-notice.php:66
+msgid "Recommended plugin: Twentig"
+msgstr "Plugin recomendado: Twentig"
+
+#: inc/welcome-notice.php:67
+msgid ""
+"Twentig is the perfect companion for your theme — featuring starter sites, "
+"enhanced blocks, patterns, and portfolio tools."
+msgstr ""
+"Twentig es el compañero perfecto para tu tema: incluye sitios de inicio, "
+"bloques mejorados, patrones y herramientas de porfolio."
+
+#: patterns/footers/footer-2-column-navigation-headings.php
+msgctxt "Pattern title"
+msgid "Footer: 2-column navigation with headings"
+msgstr "Pie de página: navegación en 2 columnas con encabezados"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:33
+#: patterns/footers/footer-4-column.php:19
+msgid "Explore"
+msgstr "Explorar"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:36
+#: patterns/footers/footer-2-column-navigation.php:32
+#: patterns/footers/footer-3-column.php:28
+#: patterns/footers/footer-4-column.php:22
+msgid "Mission"
+msgstr "Misión"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:37
+#: patterns/footers/footer-2-column-navigation.php:33
+#: patterns/footers/footer-3-column.php:29
+#: patterns/footers/footer-4-column.php:23
+msgid "Press & Media"
+msgstr "Prensa y medios"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:38
+#: patterns/footers/footer-2-column-navigation.php:34
+#: patterns/footers/footer-3-column.php:30
+#: patterns/footers/footer-4-column.php:24
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:45
+#: patterns/footers/footer-4-column.php:31
+msgid "Resources"
+msgstr "Recursos"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:48
+#: patterns/footers/footer-3-column.php:37
+#: patterns/footers/footer-4-column.php:34
+msgid "Help"
+msgstr "Ayuda"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:49
+#: patterns/footers/footer-2-column-navigation.php:42
+#: patterns/footers/footer-3-column.php:38
+#: patterns/footers/footer-4-column.php:35
+msgid "FAQs"
+msgstr "Preguntas frecuentes"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:50
+#: patterns/footers/footer-2-column-navigation.php:41
+#: patterns/footers/footer-3-column.php:39
+#: patterns/footers/footer-4-column.php:36
+#: patterns/footers/footer-simple-navigation.php:30
+#: patterns/footers/footer-with-description.php:51
+msgid "Newsletter"
+msgstr "Boletín"
+
+#. translators: 1: Year, 2: Site name, 3: Opening anchor tag for Twentig, 4: Closing anchor tag
+#: patterns/footers/footer-2-column-navigation-headings.php:68
+#: patterns/footers/footer-2-column-navigation.php:60
+#: patterns/footers/footer-3-column.php:73
+#: patterns/footers/footer-4-column.php:70
+#: patterns/footers/footer-copyright.php:19
+#: patterns/footers/footer-default.php:20
+#: patterns/footers/footer-simple-navigation.php:20
+#: patterns/footers/footer-with-description.php:41
+msgid "© %1$s %2$s. Made with %3$sTwentig%4$s."
+msgstr "© %1$s %2$s. Hecho con %3$sTwentig%4$s."
+
+#: patterns/footers/footer-2-column-navigation-headings.php:78
+#: patterns/footers/footer-3-column.php:47
+#: patterns/footers/footer-4-column.php:47
+msgid "Terms of use"
+msgstr "Términos de uso"
+
+#: patterns/footers/footer-2-column-navigation-headings.php:79
+#: patterns/footers/footer-2-column-navigation.php:43
+#: patterns/footers/footer-3-column.php:46
+#: patterns/footers/footer-4-column.php:46
+#: patterns/footers/footer-simple-navigation.php:31
+#: patterns/footers/footer-with-description.php:52
+msgid "Privacy"
+msgstr "Privacidad"
+
+#: patterns/footers/footer-2-column-navigation.php
+msgctxt "Pattern title"
+msgid "Footer: 2-column navigation"
+msgstr "Pie de página: navegación en 2 columnas"
+
+#: patterns/footers/footer-3-column.php
+msgctxt "Pattern title"
+msgid "Footer: 3-column navigation"
+msgstr "Pie de página: navegación en 3 columnas"
+
+#: patterns/footers/footer-4-column.php
+msgctxt "Pattern title"
+msgid "Footer: 4-column with headings"
+msgstr "Pie de página: 4 columnas con encabezados"
+
+#: patterns/footers/footer-4-column.php:43
+msgid "Legal"
+msgstr "Información legal"
+
+#: patterns/footers/footer-4-column.php:54
+msgid "Location"
+msgstr "Ubicación"
+
+#: patterns/footers/footer-4-column.php:57
+msgid "123 Main Street"
+msgstr "Calle Principal, 123"
+
+#: patterns/footers/footer-4-column.php:57
+msgid "New York, NY 10001"
+msgstr "Madrid, 28000"
+
+#: patterns/footers/footer-copyright.php
+msgctxt "Pattern title"
+msgid "Footer: copyright only"
+msgstr "Pie de página: solo copyright"
+
+#: patterns/footers/footer-default.php
+msgctxt "Pattern title"
+msgid "Footer: simple with social icons"
+msgstr "Pie de página: simple con iconos sociales"
+
+#: patterns/footers/footer-simple-navigation.php
+msgctxt "Pattern title"
+msgid "Footer: simple with navigation"
+msgstr "Pie de página: simple con navegación"
+
+#: patterns/footers/footer-with-description.php
+msgctxt "Pattern title"
+msgid "Footer: site title with description"
+msgstr "Pie de página: título del sitio con descripción"
+
+#: patterns/headers/header-default.php
+msgctxt "Pattern title"
+msgid "Classic header"
+msgstr "Cabecera clásica"
+
+#: patterns/headers/header-hamburger.php
+msgctxt "Pattern title"
+msgid "Header with hamburger"
+msgstr "Cabecera con menú de hamburguesa"
+
+#: patterns/headers/header-left-navigation.php
+msgctxt "Pattern title"
+msgid "Header with left navigation"
+msgstr "Cabecera con navegación a la izquierda"
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "404 content"
+msgstr "Contenido 404"
+
+#: patterns/hidden-404.php:12
+msgctxt "Message to convey that a webpage could not be found"
+msgid "The page you’re looking for can’t be found."
+msgstr "La página que buscas no se puede encontrar."
+
+#: patterns/hidden-no-results.php
+msgctxt "Pattern title"
+msgid "No results"
+msgstr "No hay resultados"
+
+#: patterns/hidden-no-results.php:12
+#: patterns/index/post-loop-1-column-sidebar.php:45
+#: patterns/index/post-loop-1-column.php:37
+#: patterns/index/post-loop-2-column-covers.php:38
+#: patterns/index/post-loop-2-column-text.php:40
+#: patterns/index/post-loop-3-column-cards.php:36
+#: patterns/index/post-loop-3-column.php:36
+#: patterns/index/post-loop-default.php:37
+#: patterns/index/post-loop-editorial-list.php:51
+#: patterns/index/post-loop-side-by-side.php:52
+msgctxt "Message explaining that there are no results returned."
+msgid "Sorry, but nothing was found."
+msgstr "Disculpa, pero no se ha encontrado nada."
+
+#: patterns/index/hidden-archive-heading.php
+msgctxt "Pattern title"
+msgid "Archive heading"
+msgstr "Encabezado del archivo"
+
+#: patterns/index/hidden-archive-heading.php:10
+#: patterns/index/hidden-blog-heading.php:14
+#: patterns/portfolio/hidden-portfolio-archive-heading.php:9
+#: patterns/single-portfolio/template-single-portfolio-cover.php:15
+#: patterns/single-portfolio/template-single-portfolio-default.php:15
+#: patterns/single-portfolio/template-single-portfolio-fullscreen-cover.php:15
+#: patterns/single-portfolio/template-single-portfolio-fullwidth-image.php:15
+#: patterns/single-portfolio/template-single-portfolio-fullwidth-split.php:15
+#: patterns/single-portfolio/template-single-portfolio-image-banner.php:15
+#: patterns/single-portfolio/template-single-portfolio-overlap.php:15
+#: patterns/single-portfolio/template-single-portfolio-split.php:15
+#: patterns/single-portfolio/template-single-portfolio-title-only.php:15
+#: patterns/single-post/template-single-post-cover.php:15
+#: patterns/single-post/template-single-post-fullscreen-cover.php:14
+#: patterns/single-post/template-single-post-fullwidth-image.php:14
+#: patterns/single-post/template-single-post-fullwidth-split.php:14
+#: patterns/single-post/template-single-post-overlap.php:15
+#: patterns/single-post/template-single-post-sidebar.php:15
+#: patterns/single-post/template-single-post-split.php:15
+#: patterns/single-post/template-single-post-title-banner.php:15
+msgid "Hero"
+msgstr "Sección destacada"
+
+#: patterns/index/hidden-blog-heading.php
+msgctxt "Pattern title"
+msgid "Blog heading"
+msgstr "Encabezado del blog"
+
+#: patterns/index/post-loop-1-column-sidebar.php
+msgctxt "Pattern title"
+msgid "Posts single-column: with sidebar"
+msgstr "Entradas en una columna: con barra lateral"
+
+#: patterns/index/post-loop-1-column.php
+msgctxt "Pattern title"
+msgid "Posts single-column"
+msgstr "Entradas en una columna"
+
+#: patterns/index/post-loop-2-column-covers.php
+msgctxt "Pattern title"
+msgid "Posts 2-column: cover"
+msgstr "Entradas en 2 columnas: fondo"
+
+#: patterns/index/post-loop-2-column-text.php
+msgctxt "Pattern title"
+msgid "Posts 2-column: text-only"
+msgstr "Entradas en 2 columnas: solo texto"
+
+#: patterns/index/post-loop-3-column-cards.php
+msgctxt "Pattern title"
+msgid "Posts 3-column: card"
+msgstr "Entradas en 3 columnas: tarjetas"
+
+#: patterns/index/post-loop-3-column.php
+msgctxt "Pattern title"
+msgid "Posts 3-column"
+msgstr "Entradas en 3 columnas"
+
+#: patterns/index/post-loop-default.php
+msgctxt "Pattern title"
+msgid "Posts 2-column"
+msgstr "Entradas en 2 columnas"
+
+#: patterns/index/post-loop-editorial-list.php
+msgctxt "Pattern title"
+msgid "Posts editorial list"
+msgstr "Lista editorial de entradas"
+
+#: patterns/index/post-loop-side-by-side.php
+msgctxt "Pattern title"
+msgid "Posts side-by-side"
+msgstr "Entradas lado a lado"
+
+#: patterns/index/template-archive-default.php
+msgctxt "Pattern title"
+msgid "Archive default"
+msgstr "Archivo por defecto"
+
+#: patterns/index/template-index-default.php
+msgctxt "Pattern title"
+msgid "Index default"
+msgstr "Índice por defecto"
+
+#: patterns/portfolio/hidden-portfolio-archive-heading.php
+msgctxt "Pattern title"
+msgid "Portfolio archive heading"
+msgstr "Encabezado de archivo de porfolio"
+
+#: patterns/portfolio/portfolio-loop-1-2-column.php
+msgctxt "Pattern title"
+msgid "Portfolio single-column: with 2-column"
+msgstr "Porfolio en una columna: con 2 columnas"
+
+#: patterns/portfolio/portfolio-loop-1-column-cover.php
+msgctxt "Pattern title"
+msgid "Portfolio single-column: cover"
+msgstr "Porfolio en una columna: fondo"
+
+#: patterns/portfolio/portfolio-loop-1-column.php
+msgctxt "Pattern title"
+msgid "Portfolio single-column"
+msgstr "Porfolio en una columna"
+
+#: patterns/portfolio/portfolio-loop-2-column-covers.php
+msgctxt "Pattern title"
+msgid "Portfolio 2-column: cover"
+msgstr "Porfolio en 2 columnas: fondo"
+
+#: patterns/portfolio/portfolio-loop-3-column-cards.php
+msgctxt "Pattern title"
+msgid "Portfolio 3-column: card"
+msgstr "Porfolio en 3 columnas: tarjetas"
+
+#: patterns/portfolio/portfolio-loop-3-column.php
+msgctxt "Pattern title"
+msgid "Portfolio 3-column"
+msgstr "Porfolio en 3 columnas"
+
+#: patterns/portfolio/portfolio-loop-alt-side-by-side.php
+msgctxt "Pattern title"
+msgid "Portfolio alternating side by side"
+msgstr "Porfolio alterno lado a lado"
+
+#: patterns/portfolio/portfolio-loop-default.php
+msgctxt "Pattern title"
+msgid "Portfolio 2-column"
+msgstr "Porfolio en 2 columnas"
+
+#: patterns/portfolio/portfolio-loop-offset.php
+msgctxt "Pattern title"
+msgid "Portfolio 2-column: offset"
+msgstr "Porfolio en 2 columnas: desplazado"
+
+#: patterns/portfolio/template-archive-portfolio.php
+msgctxt "Pattern title"
+msgid "Portfolio archive"
+msgstr "Archivo de porfolio"
+
+#: patterns/post-navigation-narrow.php patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr "Navegación de entradas"
+
+#: patterns/post-navigation-narrow.php:12
+#: patterns/post-navigation-narrow.php:13 patterns/post-navigation.php:11
+#: patterns/post-navigation.php:12
+msgid "Post navigation"
+msgstr "Navegación de entradas"
+
+#: patterns/post-navigation-narrow.php:18 patterns/post-navigation.php:17
+msgid "Previous"
+msgstr "Anterior"
+
+#: patterns/post-navigation-narrow.php:23 patterns/post-navigation.php:22
+msgid "Next"
+msgstr "Siguiente"
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar content"
+msgstr "Contenido de la barra lateral"
+
+#: patterns/sidebar.php:26
+msgid "Latest posts"
+msgstr "Últimas entradas"
+
+#: patterns/sidebar.php:38
+msgid "Categories"
+msgstr "Categorías"
+
+#: patterns/single-portfolio/hidden-portfolio-related-heading.php
+msgctxt "Pattern title"
+msgid "Related projects heading"
+msgstr "Encabezado de proyectos relacionados"
+
+#: patterns/single-portfolio/hidden-portfolio-related-heading.php:10
+msgid "Related projects"
+msgstr "Proyectos relacionados"
+
+#: patterns/single-portfolio/related-projects-1-2-column.php
+#: patterns/single-portfolio/related-projects.php
+msgctxt "Pattern title"
+msgid "Related projects: 2-column"
+msgstr "Proyectos relacionados: 2 columnas"
+
+#: patterns/single-portfolio/related-projects-1-column-cover.php
+msgctxt "Pattern title"
+msgid "Related projects: single-column covers"
+msgstr "Proyectos relacionados: fondo en una columna"
+
+#: patterns/single-portfolio/related-projects-1-column.php
+msgctxt "Pattern title"
+msgid "Related projects: single-column"
+msgstr "Proyectos relacionados: una columna"
+
+#: patterns/single-portfolio/related-projects-2-column-covers.php
+msgctxt "Pattern title"
+msgid "Related projects: 2-column covers"
+msgstr "Proyectos relacionados: fondo en 2 columnas"
+
+#: patterns/single-portfolio/related-projects-3-column-cards.php
+msgctxt "Pattern title"
+msgid "Related projects: 3-column cards"
+msgstr "Proyectos relacionados: tarjetas en 3 columnas"
+
+#: patterns/single-portfolio/related-projects-3-column.php
+msgctxt "Pattern title"
+msgid "Related projects: 3-column"
+msgstr "Proyectos relacionados: 3 columnas"
+
+#: patterns/single-portfolio/template-single-portfolio-cover.php
+msgctxt "Pattern title"
+msgid "Single project: cover"
+msgstr "Proyecto individual: fondo"
+
+#: patterns/single-portfolio/template-single-portfolio-default.php
+msgctxt "Pattern title"
+msgid "Single project: wide image"
+msgstr "Proyecto individual: imagen ancha"
+
+#: patterns/single-portfolio/template-single-portfolio-fullscreen-cover.php
+msgctxt "Pattern title"
+msgid "Single project: fullscreen cover"
+msgstr "Proyecto individual: fondo a pantalla completa"
+
+#: patterns/single-portfolio/template-single-portfolio-fullwidth-image.php
+msgctxt "Pattern title"
+msgid "Single project: full-width image"
+msgstr "Proyecto individual: imagen de ancho completo"
+
+#: patterns/single-portfolio/template-single-portfolio-fullwidth-split.php
+msgctxt "Pattern title"
+msgid "Single project: full-width split"
+msgstr "Proyecto individual: dividido a ancho completo"
+
+#: patterns/single-portfolio/template-single-portfolio-image-banner.php
+msgctxt "Pattern title"
+msgid "Single project: image banner"
+msgstr "Proyecto individual: banner de imagen"
+
+#: patterns/single-portfolio/template-single-portfolio-overlap.php
+msgctxt "Pattern title"
+msgid "Single project: overlap image"
+msgstr "Proyecto individual: imagen superpuesta"
+
+#: patterns/single-portfolio/template-single-portfolio-split.php
+msgctxt "Pattern title"
+msgid "Single project: split"
+msgstr "Proyecto individual: dividido"
+
+#: patterns/single-portfolio/template-single-portfolio-title-only.php
+msgctxt "Pattern title"
+msgid "Single project: title only"
+msgstr "Proyecto individual: solo título"
+
+#: patterns/single-post/comments-avatar.php
+msgctxt "Pattern title"
+msgid "Comments section with avatars"
+msgstr "Sección de comentarios con avatares"
+
+#: patterns/single-post/comments-avatar.php:15
+#: patterns/single-post/comments-default.php:15
+msgid "Comments"
+msgstr "Comentarios"
+
+#: patterns/single-post/comments-default.php
+msgctxt "Pattern title"
+msgid "Comments section"
+msgstr "Sección de comentarios"
+
+#: patterns/single-post/hidden-related-heading.php
+msgctxt "Pattern title"
+msgid "Related posts heading"
+msgstr "Encabezado de entradas relacionadas"
+
+#: patterns/single-post/hidden-related-heading.php:10
+msgid "Related articles"
+msgstr "Artículos relacionados"
+
+#: patterns/single-post/related-posts-2-column-covers.php
+msgctxt "Pattern title"
+msgid "Related posts: 2-column covers"
+msgstr "Entradas relacionadas: fondo en 2 columnas"
+
+#: patterns/single-post/related-posts-2-column-text.php
+msgctxt "Pattern title"
+msgid "Related posts: 2-column text-only"
+msgstr "Entradas relacionadas: solo texto en 2 columnas"
+
+#: patterns/single-post/related-posts-3-column-cards.php
+msgctxt "Pattern title"
+msgid "Related posts: 3-column cards"
+msgstr "Entradas relacionadas: tarjetas en 3 columnas"
+
+#: patterns/single-post/related-posts-default.php
+#: patterns/single-post/related-posts.php
+msgctxt "Pattern title"
+msgid "Related posts: 3-column"
+msgstr "Entradas relacionadas: 3 columnas"
+
+#: patterns/single-post/related-posts-sidebar.php
+msgctxt "Pattern title"
+msgid "Related posts: with sidebar"
+msgstr "Entradas relacionadas: con barra lateral"
+
+#: patterns/single-post/template-single-post-cover.php
+msgctxt "Pattern title"
+msgid "Single post: cover"
+msgstr "Entrada individual: fondo"
+
+#: patterns/single-post/template-single-post-default.php
+msgctxt "Pattern title"
+msgid "Single post: wide image"
+msgstr "Entrada individual: imagen ancha"
+
+#: patterns/single-post/template-single-post-fullscreen-cover.php
+msgctxt "Pattern title"
+msgid "Single post: fullscreen cover"
+msgstr "Entrada individual: fondo a pantalla completa"
+
+#: patterns/single-post/template-single-post-fullwidth-image.php
+msgctxt "Pattern title"
+msgid "Single post: full-width image"
+msgstr "Entrada individual: imagen de ancho completo"
+
+#: patterns/single-post/template-single-post-fullwidth-split.php
+msgctxt "Pattern title"
+msgid "Single post: full-width split"
+msgstr "Entrada individual: dividido a ancho completo"
+
+#: patterns/single-post/template-single-post-narrow.php
+msgctxt "Pattern title"
+msgid "Single post: narrow image"
+msgstr "Entrada individual: imagen estrecha"
+
+#: patterns/single-post/template-single-post-overlap.php
+msgctxt "Pattern title"
+msgid "Single post: overlap image"
+msgstr "Entrada individual: imagen superpuesta"
+
+#: patterns/single-post/template-single-post-sidebar.php
+msgctxt "Pattern title"
+msgid "Single post: with sidebar"
+msgstr "Entrada individual: con barra lateral"
+
+#: patterns/single-post/template-single-post-split.php
+msgctxt "Pattern title"
+msgid "Single post: split"
+msgstr "Entrada individual: dividido"
+
+#: patterns/single-post/template-single-post-title-banner.php
+msgctxt "Pattern title"
+msgid "Single post: title banner"
+msgstr "Entrada individual: banner de título"
+
+#: styles/colors/02-black.json
+msgctxt "Style variation name"
+msgid "Black"
+msgstr "Negro"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Base"
+msgstr "Base"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Base 2"
+msgstr "Base 2"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Base 3"
+msgstr "Base 3"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr "Contraste"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Contrast 2"
+msgstr "Contraste 2"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr "Énfasis"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Secondary text"
+msgstr "Texto secundario"
+
+#: styles/colors/02-black.json styles/colors/03-off-white.json
+#: styles/colors/04-blue.json styles/colors/05-jet-black.json
+#: styles/colors/06-light-gray.json styles/colors/07-champagne.json
+#: styles/colors/08-gray.json styles/colors/09-dark-blue.json
+#: styles/colors/10-mocha.json styles/colors/11-teal.json
+#: styles/colors/12-light-blue.json styles/colors/13-purple.json
+#: styles/colors/14-pink.json theme.json
+msgctxt "Color name"
+msgid "Border"
+msgstr "Borde"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Base to Base 2"
+msgstr "Base a Base 2"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Base to Base 3"
+msgstr "Base a Base 3"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Base 2 to Base"
+msgstr "Base 2 a Base"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Base 3 to Base"
+msgstr "Base 3 a Base"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Base to Transparent"
+msgstr "Base a Transparente"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Transparent to Base"
+msgstr "Transparente a Base"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Accent"
+msgstr "Énfasis"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Diagonal Accent"
+msgstr "Énfasis diagonal"
+
+#: styles/colors/02-black.json styles/colors/05-jet-black.json
+#: styles/colors/09-dark-blue.json theme.json
+msgctxt "Gradient name"
+msgid "Analogous Accent"
+msgstr "Énfasis análogo"
+
+#: styles/colors/03-off-white.json
+msgctxt "Style variation name"
+msgid "Off-White"
+msgstr "Blanquecino"
+
+#: styles/colors/04-blue.json
+msgctxt "Style variation name"
+msgid "Blue"
+msgstr "Azul"
+
+#: styles/colors/05-jet-black.json
+msgctxt "Style variation name"
+msgid "Jet Black"
+msgstr "Negro azabache"
+
+#: styles/colors/06-light-gray.json
+msgctxt "Style variation name"
+msgid "Light Gray"
+msgstr "Gris claro"
+
+#: styles/colors/07-champagne.json
+msgctxt "Style variation name"
+msgid "Champagne"
+msgstr "Champán"
+
+#: styles/colors/08-gray.json
+msgctxt "Style variation name"
+msgid "Gray"
+msgstr "Gris"
+
+#: styles/colors/09-dark-blue.json
+msgctxt "Style variation name"
+msgid "Dark Blue"
+msgstr "Azul oscuro"
+
+#: styles/colors/10-mocha.json
+msgctxt "Style variation name"
+msgid "Mocha"
+msgstr "Moca"
+
+#: styles/colors/11-teal.json
+msgctxt "Style variation name"
+msgid "Teal"
+msgstr "Verde azulado"
+
+#: styles/colors/12-light-blue.json
+msgctxt "Style variation name"
+msgid "Light Blue"
+msgstr "Azul claro"
+
+#: styles/colors/13-purple.json
+msgctxt "Style variation name"
+msgid "Purple"
+msgstr "Morado"
+
+#: styles/colors/14-pink.json
+msgctxt "Style variation name"
+msgid "Pink"
+msgstr "Rosa"
+
+#: styles/typography/02.inter.json
+msgctxt "Style variation name"
+msgid "Inter"
+msgstr "Inter"
+
+#: styles/typography/02.inter.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr "Inter"
+
+#: styles/typography/03.google-sans.json
+msgctxt "Style variation name"
+msgid "Google Sans"
+msgstr "Google Sans"
+
+#: styles/typography/03.google-sans.json
+msgctxt "Font family name"
+msgid "Google Sans"
+msgstr "Google Sans"
+
+#: styles/typography/04.tiktok-sans.json
+msgctxt "Style variation name"
+msgid "TikTok Sans"
+msgstr "TikTok Sans"
+
+#: styles/typography/04.tiktok-sans.json
+#: styles/typography/10.bricolage-grotesque-tiktok-sans.json
+msgctxt "Font family name"
+msgid "TikTok Sans"
+msgstr "TikTok Sans"
+
+#: styles/typography/05.dm-sans.json
+msgctxt "Style variation name"
+msgid "DM Sans"
+msgstr "DM Sans"
+
+#: styles/typography/05.dm-sans.json styles/typography/19.fraunces-dm-sans.json
+msgctxt "Font family name"
+msgid "DM Sans"
+msgstr "DM Sans"
+
+#: styles/typography/06.mona-sans.json
+msgctxt "Style variation name"
+msgid "Mona Sans"
+msgstr "Mona Sans"
+
+#: styles/typography/06.mona-sans.json styles/typography/11.syne-mona-sans.json
+msgctxt "Font family name"
+msgid "Mona Sans"
+msgstr "Mona Sans"
+
+#: styles/typography/07.space-grotesk.json
+msgctxt "Style variation name"
+msgid "Space Grotesk"
+msgstr "Space Grotesk"
+
+#: styles/typography/07.space-grotesk.json
+msgctxt "Font family name"
+msgid "Space Grotesk"
+msgstr "Space Grotesk"
+
+#: styles/typography/08.google-sans-flex-rounded.json
+msgctxt "Style variation name"
+msgid "Google Sans Flex Rounded"
+msgstr "Google Sans Flex Rounded"
+
+#: styles/typography/08.google-sans-flex-rounded.json
+msgctxt "Font family name"
+msgid "Google Sans Flex Rounded"
+msgstr "Google Sans Flex Rounded"
+
+#: styles/typography/09.mozilla-headline-mozilla-text.json
+msgctxt "Style variation name"
+msgid "Mozilla Headline · Mozilla Text"
+msgstr "Mozilla Headline · Mozilla Text"
+
+#: styles/typography/09.mozilla-headline-mozilla-text.json
+msgctxt "Font family name"
+msgid "Mozilla Headline"
+msgstr "Mozilla Headline"
+
+#: styles/typography/09.mozilla-headline-mozilla-text.json
+msgctxt "Font family name"
+msgid "Mozilla Text"
+msgstr "Mozilla Text"
+
+#: styles/typography/10.bricolage-grotesque-tiktok-sans.json
+msgctxt "Style variation name"
+msgid "Bricolage Grotesque · TikTok Sans"
+msgstr "Bricolage Grotesque · TikTok Sans"
+
+#: styles/typography/10.bricolage-grotesque-tiktok-sans.json
+msgctxt "Font family name"
+msgid "Bricolage Grotesque"
+msgstr "Bricolage Grotesque"
+
+#: styles/typography/11.syne-mona-sans.json
+msgctxt "Style variation name"
+msgid "Syne · Mona Sans"
+msgstr "Syne · Mona Sans"
+
+#: styles/typography/11.syne-mona-sans.json
+msgctxt "Font family name"
+msgid "Syne"
+msgstr "Syne"
+
+#: styles/typography/12.source-sans-3-inconsolata.json
+msgctxt "Style variation name"
+msgid "Source Sans 3 · Inconsolata"
+msgstr "Source Sans 3 · Inconsolata"
+
+#: styles/typography/12.source-sans-3-inconsolata.json
+#: styles/typography/18.source-serif-4-source-sans-3.json
+msgctxt "Font family name"
+msgid "Source Sans 3"
+msgstr "Source Sans 3"
+
+#: styles/typography/12.source-sans-3-inconsolata.json
+msgctxt "Font family name"
+msgid "Inconsolata"
+msgstr "Inconsolata"
+
+#: styles/typography/13.roboto-flex-roboto-serif.json
+msgctxt "Style variation name"
+msgid "Roboto Flex · Roboto Serif"
+msgstr "Roboto Flex · Roboto Serif"
+
+#: styles/typography/13.roboto-flex-roboto-serif.json
+msgctxt "Font family name"
+msgid "Roboto Flex"
+msgstr "Roboto Flex"
+
+#: styles/typography/13.roboto-flex-roboto-serif.json
+#: styles/typography/16.roboto-serif.json
+msgctxt "Font family name"
+msgid "Roboto Serif"
+msgstr "Roboto Serif"
+
+#: styles/typography/14.oswald-source-serif-4.json
+msgctxt "Style variation name"
+msgid "Oswald · Source Serif 4"
+msgstr "Oswald · Source Serif 4"
+
+#: styles/typography/14.oswald-source-serif-4.json
+msgctxt "Font family name"
+msgid "Oswald"
+msgstr "Oswald"
+
+#: styles/typography/14.oswald-source-serif-4.json
+#: styles/typography/18.source-serif-4-source-sans-3.json
+msgctxt "Font family name"
+msgid "Source Serif 4"
+msgstr "Source Serif 4"
+
+#: styles/typography/15.literata.json
+msgctxt "Style variation name"
+msgid "Literata"
+msgstr "Literata"
+
+#: styles/typography/15.literata.json
+msgctxt "Font family name"
+msgid "Literata"
+msgstr "Literata"
+
+#: styles/typography/16.roboto-serif.json
+msgctxt "Style variation name"
+msgid "Roboto Serif"
+msgstr "Roboto Serif"
+
+#: styles/typography/17.brygada-karla.json
+msgctxt "Style variation name"
+msgid "Brygada 1918 · Karla"
+msgstr "Brygada 1918 · Karla"
+
+#: styles/typography/17.brygada-karla.json
+msgctxt "Font family name"
+msgid "Karla"
+msgstr "Karla"
+
+#: styles/typography/17.brygada-karla.json
+msgctxt "Font family name"
+msgid "Brygada 1918"
+msgstr "Brygada 1918"
+
+#: styles/typography/18.source-serif-4-source-sans-3.json
+msgctxt "Style variation name"
+msgid "Source Serif 4 · Source Sans 3"
+msgstr "Source Serif 4 · Source Sans 3"
+
+#: styles/typography/19.fraunces-dm-sans.json
+msgctxt "Style variation name"
+msgid "Fraunces · DM Sans"
+msgstr "Fraunces · DM Sans"
+
+#: styles/typography/19.fraunces-dm-sans.json
+msgctxt "Font family name"
+msgid "Fraunces"
+msgstr "Fraunces"
+
+#: styles/typography/20.instrument-serif-instrument-sans.json
+msgctxt "Style variation name"
+msgid "Instrument Serif · Instrument Sans"
+msgstr "Instrument Serif · Instrument Sans"
+
+#: styles/typography/20.instrument-serif-instrument-sans.json
+msgctxt "Font family name"
+msgid "Instrument Serif"
+msgstr "Instrument Serif"
+
+#: styles/typography/20.instrument-serif-instrument-sans.json
+msgctxt "Font family name"
+msgid "Instrument Sans"
+msgstr "Instrument Sans"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Grayscale"
+msgstr "Escala de grises"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr "4"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "8"
+msgstr "8"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "16"
+msgstr "16"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "24"
+msgstr "24"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "32 small"
+msgstr "32 pequeño"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "32"
+msgstr "32"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "40 small"
+msgstr "40 pequeño"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "40"
+msgstr "40"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "48 small"
+msgstr "48 pequeño"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "48"
+msgstr "48"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "64 small"
+msgstr "64 pequeño"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "64"
+msgstr "64"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "80"
+msgstr "80"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "100"
+msgstr "100"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "120"
+msgstr "120"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "160"
+msgstr "160"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "200"
+msgstr "200"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Site padding"
+msgstr "Relleno del sitio"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "auto"
+msgstr "auto"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System Sans Serif"
+msgstr "Sans Serif del sistema"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X-Small"
+msgstr "X-pequeño"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Pequeño"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Normal"
+msgstr "Normal"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Mediano"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X-Large"
+msgstr "X-grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2X-Large"
+msgstr "2X-grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3X-Large"
+msgstr "3X-grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "4X-Large"
+msgstr "4X-grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "5X-Large"
+msgstr "5X-grande"
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Light"
+msgstr "Suave"
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Natural"
+msgstr "Natural"
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Deep"
+msgstr "Profunda"
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Crisp"
+msgstr "Nítida"
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "Small"
+msgstr "Pequeño"
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "Medium"
+msgstr "Mediano"
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "Large"
+msgstr "Grande"
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "X-Large"
+msgstr "X-grande"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Cabecera"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Pie de página"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: Blank"
+msgstr "Página: en blanco"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: With Title"
+msgstr "Página: con título"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: Transparent Header"
+msgstr "Página: cabecera transparente"
+
+#, fuzzy
+#~ msgid ""
+#~ "A modern, versatile block theme designed for full site editing. Features "
+#~ "comprehensive patterns, multiple style variations, and extensive block "
+#~ "customization options. Perfect for blogs, portfolios, photography sites, "
+#~ "and business websites."
+#~ msgstr ""
+#~ "Un tema de bloques moderno y versátil diseñado para la edición completa "
+#~ "del sitio. Cuenta con patrones integrales, múltiples variaciones de "
+#~ "estilo y amplias opciones de personalización de bloques. Perfecto para "
+#~ "blogs, porfolios, sitios de fotografía y sitios web de negocios."
+
+#~ msgctxt "Pattern title"
+#~ msgid "Related projects: single-column 2-column"
+#~ msgstr "Proyectos relacionados: una columna 2 columnas"

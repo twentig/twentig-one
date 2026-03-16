@@ -1,0 +1,95 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Instrument Serif · Instrument Sans",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Instrument Serif",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/instrument-serif.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Instrument Serif\", serif",
+					"name": "Instrument Serif",
+					"slug": "secondary"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Instrument Sans",
+							"fontStyle": "normal",
+							"fontWeight": "400 700",
+							"src": [
+								"file:./assets/fonts/instrument-sans.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Instrument Sans\", sans-serif",
+					"name": "Instrument Sans",
+					"slug": "primary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--primary)",
+					"fontWeight": "500",
+					"letterSpacing": "-0.01em"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--secondary)",
+					"fontWeight": "400",
+					"fontSize": "var:preset|font-size|5-x-large"
+				}
+			},
+			"button": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--primary)"
+		},
+		"blocks": {
+			"core/post-navigation-link": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontWeight": "500",
+					"letterSpacing": "-0.01em"
+				}
+			},
+			"core/comment-author-name": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/comment-reply-link": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			}
+		}
+	}
+}

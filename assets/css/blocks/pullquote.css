@@ -1,0 +1,15 @@
+.wp-block-pullquote:is(.has-background, [style*="border-"]) {
+	padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--35);
+}
+
+.wp-block-pullquote p {
+	margin: 0 0 20px;
+}
+
+.wp-block-pullquote p:last-child {
+	margin-bottom: 0;
+}
+
+.wp-block-pullquote:is(.alignright,.alignleft):where(.has-background, [style*="border-"]) {
+	padding: var(--wp--preset--spacing--20);
+}

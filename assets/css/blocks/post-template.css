@@ -1,0 +1,16 @@
+.wp-block-post-excerpt__more-text {
+	margin-top: 1em;
+}
+
+.wp-block-post-title .external-link svg {
+	width: 1em;
+	height: 1em;
+	margin-inline-start: 0.125em;
+	fill: currentColor;
+	vertical-align: middle;
+}
+
+.wp-block-post-template.is-layout-flow:only-child li:last-child > .wp-block-separator:last-child,
+.wp-block-post-template + .wp-block-spacer:last-child {
+	display: none;
+}

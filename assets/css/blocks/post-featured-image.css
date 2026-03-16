@@ -1,0 +1,22 @@
+.wp-block-post-featured-image.has-format-icon svg {
+	position: absolute;
+	left: 16px;
+	bottom: 16px;
+	background-color: var(--wp--preset--color--base);
+	fill: var(--wp--preset--color--contrast);
+	padding: 6px;
+	width: auto;
+	height: auto;
+	border-radius: 99px;
+}
+
+.wp-block-post-featured-image[style*="height:75vh"] {
+	height: 75svh !important;
+}
+
+/* Fix core bug with "useFirstImageFromPost":true */
+.wp-block-post-featured-image[style*="aspect-ratio"] img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

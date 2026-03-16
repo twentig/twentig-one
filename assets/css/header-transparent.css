@@ -1,0 +1,82 @@
+header.header-transparent {
+	position: absolute;
+	width: 100%;
+	top: var(--wp-admin--admin-bar--height, 0px);
+	left: 0;
+	z-index: 99;
+}
+
+header.header-transparent:has(>.is-position-sticky) {
+	position: fixed;
+}
+
+header.header-transparent:not(.tw-header-opaque) > .wp-block-group {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
+}
+
+header.header-transparent + main > :first-child:is(.wp-block-group,.wp-block-cover),
+header.header-transparent + main .wp-block-post-content > :first-child:is(.wp-block-group,.wp-block-cover) {
+	padding-top: clamp(120px, calc(120px + ((1vw - 6.4px) * 6.25)), 160px);
+}
+
+.header-transparent + main > .wp-block-cover[style*="min-height:100vh"],
+.header-transparent + main .wp-block-post-content > .wp-block-cover:first-child[style*="min-height:100vh"] {
+	min-height: 100svh !important;
+}
+
+@media screen and (max-width: 600px) {
+
+	header.wp-block-template-part {
+		--wp-admin--admin-bar--height: 0px;
+	}
+}
+
+html:not(.has-modal-open) .header-transparent:not(.tw-header-opaque) .wp-block-site-logo:not(.logo-no-filter):not(.is-style-rounded) img {
+	filter: url(#tw-logo-color) drop-shadow(0 0 0 color-mix(in srgb, var(--tw-header-transparent-color) 0%, transparent));
+}
+
+body:has(.header-transparent + main > .wp-block-cover:first-child:where(:not(.is-light))),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .wp-block-cover:first-child:where(:not(.is-light))),
+body:has(.header-transparent + main > .has-white-color:first-child),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .has-white-color:first-child) {
+	--tw-header-transparent-color: #fff;
+}
+
+body:has(.header-transparent + main > .has-contrast-color:first-child),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .has-contrast-color:first-child),
+body:has(.header-transparent > .has-base-color):has(.header-transparent + main > .wp-block-group:first-child:not(.has-text-color)),
+body:has(.header-transparent > .has-base-color):has(.header-transparent + main > .wp-block-post-content:first-child > .wp-block-group:first-child:not(.has-text-color)) {
+	--tw-header-transparent-color: var(--wp--preset--color--contrast);
+}
+
+body:has(.header-transparent + main > .has-contrast-2-color:first-child),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .has-contrast-2-color:first-child) {
+	--tw-header-transparent-color: var(--wp--preset--color--contrast-2);
+}
+
+body:has(.header-transparent + main > .has-base-color:first-child),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .has-base-color:first-child) {
+	--tw-header-transparent-color: var(--wp--preset--color--base);
+}
+
+body:has(.header-transparent + main > .has-base-2-color:first-child),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .has-base-2-color:first-child) {
+	--tw-header-transparent-color: var(--wp--preset--color--base-2);
+}
+
+body:has(.header-transparent + main > .has-base-3-color:first-child),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .has-base-3-color:first-child) {
+	--tw-header-transparent-color: var(--wp--preset--color--base-3);
+}
+
+body:has(.header-transparent + main > .has-accent-color:first-child),
+body:has(.header-transparent + main > .wp-block-post-content:first-child > .has-accent-color:first-child) {
+	--tw-header-transparent-color: var(--wp--preset--color--accent);
+}
+
+html:not(.has-modal-open) .header-transparent:not(.tw-header-opaque),
+html:not(.has-modal-open) .header-transparent:not(.tw-header-opaque) :where(p,.wp-block-navigation__responsive-container-open,.wp-block-navigation__submenu-icon,.wp-block-search, .wp-block-site-title a,.wp-block-site-tagline, .wp-block-button.is-style-outline a,.wp-block-navigation__container > li > .wp-block-navigation-item__content,.is-style-logos-only a,.wc-block-mini-cart) {
+	color: var(--tw-header-transparent-color) !important;
+}

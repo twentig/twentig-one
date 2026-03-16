@@ -1,0 +1,76 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Mozilla Headline · Mozilla Text",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Mozilla Headline",
+							"fontStyle": "normal",
+							"fontWeight": "200 700",
+							"src": [
+								"file:./assets/fonts/mozilla-headline.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Mozilla Headline\", sans-serif",
+					"name": "Mozilla Headline",
+					"slug": "secondary"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Mozilla Text",
+							"fontStyle": "normal",
+							"fontWeight": "200 700",
+							"src": [
+								"file:./assets/fonts/mozilla-text.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Mozilla Text\", sans-serif",
+					"name": "Mozilla Text",
+					"slug": "primary"
+				}				
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--secondary)",
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--primary)"
+		},
+		"blocks": {
+			"core/post-navigation-link": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--secondary)",
+					"fontWeight": "600"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--secondary)",
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--secondary)",
+					"fontWeight": "600"
+				}
+			}
+		}
+	}
+}

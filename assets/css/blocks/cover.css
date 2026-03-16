@@ -1,0 +1,15 @@
+.wp-block-cover {
+	padding: var(--wp--preset--spacing--35);
+}
+
+.wp-block-cover.alignwide {
+	padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--35);
+}
+
+.wp-block-cover.alignfull {
+	padding: var(--wp--preset--spacing--60) var(--wp--style--root--padding-left);
+}
+
+.single .wp-block-cover:not(:has(img)) .wp-block-cover__background {
+	opacity: 1;
+}

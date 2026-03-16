@@ -1,0 +1,26 @@
+.wp-block-table td,
+.wp-block-table th {
+	padding: 1rem;
+}
+
+.wp-block-table :where(th) {
+	text-align: inherit;
+	font-weight: 600;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom: 0;
+}
+
+table:where(.has-border-color) {
+	border-width: 1px;
+}
+
+.wp-block-table thead,
+.wp-block-table tfoot {
+	border-width: 2px;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: color-mix(in srgb, currentColor 5%, transparent);
+}

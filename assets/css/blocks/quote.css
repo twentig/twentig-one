@@ -1,0 +1,24 @@
+.wp-block-quote {
+	border-inline-start: 2px solid currentcolor;
+	padding-inline-start: 20px;
+}
+
+.wp-block-quote.has-text-align-right {
+	border-left: none;
+	border-right: 2px solid currentcolor;
+	padding-inline: 0 20px;
+}
+
+.wp-block-quote.has-text-align-center,
+.wp-block-quote.is-style-plain {
+	border: none;
+	padding-inline: 0;
+}
+
+.wp-block-quote.has-background {
+	padding: var(--wp--preset--spacing--25);
+}
+
+.wp-block-quote p:last-child {
+	margin-bottom: 0;
+}

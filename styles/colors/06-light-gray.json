@@ -1,0 +1,51 @@
+{
+	"title": "Light Gray",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#f5f5f5",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Base 2",
+					"slug": "base-2"
+				},
+				{
+					"color": "#ffca42",
+					"name": "Base 3",
+					"slug": "base-3"
+				},
+				{
+					"color": "#000000",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#10131e",
+					"name": "Contrast 2",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#293e8e",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "color-mix(in srgb, currentColor 63%, transparent)",
+					"name": "Secondary text",
+					"slug": "secondary"
+				},
+				{
+					"color": "color-mix(in srgb, currentColor 20%, transparent)",
+					"name": "Border",
+					"slug": "tertiary"
+				}
+			]
+		}
+	},
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json"
+}

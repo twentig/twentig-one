@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Google Sans Flex Rounded",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Google Sans Flex Rounded",
+							"fontStyle": "normal",
+							"fontWeight": "100 1000",
+							"src": [
+								"file:./assets/fonts/google-sans-flex-rounded.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Google Sans Flex Rounded\", sans-serif",
+					"name": "Google Sans Flex Rounded",
+					"slug": "primary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			},
+			"button": {
+				"typography": {
+					"fontWeight": "600"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--primary)"
+		},
+		"blocks": {
+			"core/post-navigation-link": {
+				"typography": {
+					"fontWeight": "600"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			}
+		}
+	}
+}

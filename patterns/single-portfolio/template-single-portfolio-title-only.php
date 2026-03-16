@@ -1,0 +1,25 @@
+<?php
+/**
+ * Title: Single project: title only
+ * Slug: twentigone/template-single-portfolio-title-only
+ * Template Types: single-portfolio
+ * Viewport width: 1400
+ * Inserter: false
+ */
+?>
+
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--70)">
+	<!-- wp:group {"metadata":{"name":"<?php esc_html_e( 'Hero', 'twentig-one' ); ?>"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|65"},"margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull" style="margin-bottom:var(--wp--preset--spacing--60);padding-top:var(--wp--preset--spacing--65)">
+		<!-- wp:post-title {"textAlign":"center","level":1} /-->
+	</div>
+	<!-- /wp:group -->
+	<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+	<!-- wp:pattern {"slug":"twentigone/post-navigation"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

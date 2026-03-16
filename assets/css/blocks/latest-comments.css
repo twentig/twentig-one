@@ -1,0 +1,36 @@
+ol.wp-block-latest-comments {
+	padding-inline-start: 0;
+	list-style: none;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.wp-block-latest-comments__comment:not(:first-child) {
+	margin-top: var(--wp--preset--spacing--20);
+}
+
+.wp-block-latest-comments__comment:has(.wp-block-latest-comments__comment-avatar) {
+	display: flex;
+	gap: var(--wp--preset--spacing--15);
+}
+
+.wp-block-latest-comments__comment-excerpt p {
+	margin-block: 8px 0;
+}
+
+.wp-block-latest-comments__comment-meta {
+	line-height: 1.2;
+}
+
+.wp-block-latest-comments__comment-date {
+	display: block;
+	margin-top: 8px;
+	font-size: var(--wp--preset--font-size--x-small);
+	color: var(--wp--preset--color--secondary);
+}
+
+.wp-block-latest-comments__comment-avatar {
+	display: block;
+	border-radius: 99px;
+	height: 32px;
+	width: 32px;
+}

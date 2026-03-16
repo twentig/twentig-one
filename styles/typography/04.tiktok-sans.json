@@ -1,0 +1,70 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "TikTok Sans",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "TikTok Sans",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"src": [
+								"file:./assets/fonts/tiktok-sans.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"TikTok Sans\", sans-serif",
+					"name": "TikTok Sans",
+					"slug": "primary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"button": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--primary)"
+		},
+		"blocks": {
+			"core/post-navigation-link": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/comment-author-name": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/comment-reply-link": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Space Grotesk",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Space Grotesk",
+							"fontStyle": "normal",
+							"fontWeight": "300 700",
+							"src": [
+								"file:./assets/fonts/space-grotesk.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Space Grotesk\", sans-serif",
+					"name": "Space Grotesk",
+					"slug": "primary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--primary)"
+		},
+		"blocks": {
+			"core/post-navigation-link": {
+				"typography": {
+					"fontWeight": "600"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			}
+		}
+	}
+}

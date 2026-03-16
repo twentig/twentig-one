@@ -1,0 +1,111 @@
+.tw-align-baseline {
+	align-items: baseline !important;
+}
+
+.tw-text-balance {
+	text-wrap: balance;
+}
+
+.tw-empty-hidden:empty {
+	display: none !important;
+}
+
+.wp-block-post-navigation-link.is-style-tw-nav-stack .post-navigation-link__label {
+	display: inline-block;
+	margin-bottom: 0.5em;
+	font-size: min(0.777777em, 1rem);
+	color: var(--wp--preset--color--secondary);
+	font-family: var(--wp--preset--font-family--primary, inherit);
+}
+
+.wp-block-post-navigation-link.is-style-tw-nav-stack .post-navigation-link__title {
+	display: block;
+}
+
+.wp-block-post-terms.is-style-tw-outline-pill a {
+	text-decoration: none;
+	padding: 0.375rem 0.875rem;
+	border: 1px solid;
+	border-radius: 100px;
+	margin-block: 5px;
+	display: inline-block;
+}
+
+.wp-block-post-terms.is-style-tw-outline-pill .wp-block-post-terms__separator {
+	visibility: hidden;
+	display: inline-block;
+	width: 10px;
+}
+
+.tw-stretched-link {
+	position: relative;
+}
+
+.tw-stretched-link .wp-block-post-title a::after {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: auto;
+	content: "";
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.tw-stretched-link :where(.wp-block-post-terms,.wp-block-post-author__name,.wp-block-gallery,.wp-block-video,.wp-block-embed,.wp-block-audio) {
+	position: relative;
+	z-index: 2;
+}
+
+.wp-block-media-text.is-image-fill > figure.wp-block-media-text__media img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+	margin: 0;
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.tw-sm-text-left {
+		text-align: left !important;
+	}
+
+	.tw-sm-order-first {
+		order: -1;
+	}
+
+	.wp-block-media-text.is-stacked-on-mobile {
+		grid-template-columns: 100% !important;
+	}
+
+	.wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__content {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.wp-block-post-template.is-layout-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+	.wp-block-post-template.is-layout-grid:where(.columns-4,.columns-5,.columns-6) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
