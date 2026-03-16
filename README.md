@@ -4,6 +4,8 @@ Twentig One is a modern and powerful WordPress block theme designed for Full Sit
 
 [Theme Homepage](https://twentig.com/twentig-one) · [Try the Playground](https://twentig.com/playground)
 
+![twentig-one-github](https://github.com/user-attachments/assets/a97cc743-88a4-4ef3-a772-77ee3d4e7a2d)
+
 ## Features
 
 - Free WordPress block theme for Full Site Editing
