@@ -3,7 +3,7 @@ Contributors: twentig
 Requires at least: 6.9
 Tested up to: 7.0
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,7 +13,20 @@ Twentig One is a modern and powerful WordPress block theme designed for Full Sit
 
 == Changelog ==
 
+= 1.0.1 - 2026-05-19 =
+
+* Add overlay navigation patterns.
+* Add portfolio archive template and remove portfolio taxonomy templates.
+* Allow menu item descriptions.
+* Improve submenu display when set to Click in overlay navigation.
+* Improve lightbox gallery display.
+* Update portfolio and post grid pattern columns with the minimumColumnWidth setting.
+* Fix logo color filter enqueueing in transparent headers.
+* Add select element styles in theme.json.
+* Update theme update endpoint to twentig.com.
+
 = 1.0.0 - 2026-03-17 =
+
 * Initial release
 
 == Copyright ==

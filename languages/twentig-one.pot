@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Twentig One 0.1.0\n"
+"Project-Id-Version: Twentig One 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/twentig-one\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-06T22:28:54+00:00\n"
+"POT-Creation-Date: 2026-05-15T10:01:06+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: twentig-one\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #. Theme URI of the theme
 #: style.css
-msgid "https://twentig.com/theme/twentig-one/"
+msgid "https://twentig.com/twentig-one/"
 msgstr ""
 
 #. Description of the theme
@@ -51,95 +51,99 @@ msgstr ""
 msgid "Pill"
 msgstr ""
 
-#: functions.php:605
+#: functions.php:604
 msgid "opens in a new tab"
 msgstr ""
 
-#: functions.php:672
+#: functions.php:671
 msgctxt "Block pattern category"
 msgid "Utilities"
 msgstr ""
 
-#: functions.php:713
+#: functions.php:712
 msgid "Enable smooth scroll."
 msgstr ""
 
-#: functions.php:714
+#: functions.php:713
 msgid "Align overlay content to the center."
 msgstr ""
 
-#: functions.php:715
+#: functions.php:714
 msgid "Show post format icon."
 msgstr ""
 
-#: functions.php:716
+#: functions.php:715
 msgid "Show post format media (gallery, video, audio)."
 msgstr ""
 
-#: functions.php:717
+#: functions.php:716
 msgid "Make the header transparent."
 msgstr ""
 
-#: functions.php:718
+#: functions.php:717
 msgid "Keep original logo colors on transparent header."
 msgstr ""
 
-#: functions.php:799
+#: functions.php:871
 #: patterns/hidden-404.php:19
 msgid "Home"
 msgstr ""
 
-#: functions.php:802
+#: functions.php:874
 #: patterns/sidebar.php:18
 msgid "About"
 msgstr ""
 
-#: functions.php:805
+#: functions.php:877
 msgid "Services"
 msgstr ""
 
-#: functions.php:808
+#: functions.php:880
 #: patterns/index/hidden-blog-heading.php:10
 msgid "Blog"
 msgstr ""
 
-#: functions.php:811
+#: functions.php:883
 msgid "Portfolio"
 msgstr ""
 
-#: functions.php:814
+#: functions.php:886
 msgid "Work"
 msgstr ""
 
-#: functions.php:817
+#: functions.php:889
 msgid "Gallery"
 msgstr ""
 
-#: functions.php:820
+#: functions.php:892
 msgid "Info"
 msgstr ""
 
-#: functions.php:823
+#: functions.php:895
 msgid "Company"
 msgstr ""
 
-#: functions.php:826
+#: functions.php:898
 msgid "Contact"
 msgstr ""
 
-#: inc/welcome-notice.php:49
+#: inc/welcome-notice.php:54
+msgid "Update Twentig"
+msgstr ""
+
+#: inc/welcome-notice.php:57
 msgid "Activate Twentig"
 msgstr ""
 
-#: inc/welcome-notice.php:52
+#: inc/welcome-notice.php:60
 msgid "Install Twentig"
 msgstr ""
 
-#: inc/welcome-notice.php:66
+#: inc/welcome-notice.php:74
 msgid "Recommended plugin: Twentig"
 msgstr ""
 
-#: inc/welcome-notice.php:67
+#: inc/welcome-notice.php:75
 msgid "Twentig is the perfect companion for your theme — featuring starter sites, enhanced blocks, patterns, and portfolio tools."
 msgstr ""
 
@@ -292,6 +296,67 @@ msgstr ""
 #: patterns/headers/header-left-navigation.php
 msgctxt "Pattern title"
 msgid "Header with left navigation"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-01.php
+msgctxt "Pattern title"
+msgid "Left 01"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-01.php:12
+#: patterns/headers/navigation-overlay-02.php:12
+#: patterns/headers/navigation-overlay-03.php:12
+#: patterns/headers/navigation-overlay-04.php:12
+#: patterns/headers/navigation-overlay-05.php:12
+#: patterns/headers/navigation-overlay-06.php:12
+#: patterns/headers/navigation-overlay-11.php:12
+#: patterns/headers/navigation-overlay-12.php:12
+#: patterns/headers/navigation-overlay-13.php:12
+msgid "Navigation Overlay"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-02.php
+msgctxt "Pattern title"
+msgid "Left 02"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-03.php
+msgctxt "Pattern title"
+msgid "Left 03"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-04.php
+msgctxt "Pattern title"
+msgid "Left 04"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-05.php
+msgctxt "Pattern title"
+msgid "Left 05"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-06.php
+msgctxt "Pattern title"
+msgid "Left 06"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-06.php:30
+msgid "Get started"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-11.php
+msgctxt "Pattern title"
+msgid "Center 01"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-12.php
+msgctxt "Pattern title"
+msgid "Center 02"
+msgstr ""
+
+#: patterns/headers/navigation-overlay-13.php
+msgctxt "Pattern title"
+msgid "Center 03"
 msgstr ""
 
 #: patterns/hidden-404.php

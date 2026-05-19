@@ -15,9 +15,17 @@
 	padding-bottom: 10px;
 }
 
-.wp-block-navigation:not(.is-vertical) .is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
-	row-gap: 20px;
-	padding: 20px 16px 0 !important;
+.wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child > .wp-block-navigation__submenu-container {
+	row-gap: 16px;
+	padding: 16px 16px 0;
+}
+
+.wp-block-navigation .wp-block-navigation__overlay-container .has-child.open-always.wp-block-navigation-submenu {
+	gap: 16px;
+}
+
+.wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child.open-always > .wp-block-navigation__submenu-container {
+	padding-top: 0;
 }
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container :is(li, li .wp-block-navigation-item__content) {
@@ -36,4 +44,30 @@
 
 .wp-block-navigation .wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle {
 	padding-inline-end: 1.1em;
+}
+
+.disable-default-overlay.is-menu-open .wp-block-navigation-item.open-on-click {
+	flex-wrap: wrap;
+	justify-content: inherit;
+}
+
+.disable-default-overlay.is-menu-open .wp-block-navigation-item.has-child.open-on-click > .wp-block-navigation-submenu {
+	position: relative;
+	border: 0;
+	width: 100%;
+	opacity: 1;
+	height: auto;
+}
+
+.disable-default-overlay.is-menu-open .wp-block-navigation-item.has-child.open-on-click .wp-block-navigation-submenu__toggle[aria-expanded="false"] ~ .wp-block-navigation-submenu {
+	display: none;
+}
+
+.disable-default-overlay.is-menu-open .is-content-justification-stretch,
+.disable-default-overlay.is-menu-open .is-content-justification-stretch .wp-block-navigation-item {
+	width: 100%;
+}
+
+.disable-default-overlay.is-menu-open .is-content-justification-stretch:has(.open-on-click) :where(.wp-block-navigation-submenu__toggle,.wp-block-navigation-item__content) {
+	flex-grow: 1;
 }

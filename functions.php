@@ -309,7 +309,7 @@ function twentigone_filter_template_part_block( $block_content, $block ) {
 	wp_enqueue_style( 'twentigone-header-transparent' );
 
 	if ( str_contains( $block_content, 'site-logo' ) || is_customize_preview() ) {
-		add_action( 'wp_head', 'twentigone_output_logo_svg_filter' );
+		add_action( 'wp_body_open', 'twentigone_output_logo_svg_filter' );
 	}
 
 	return $block_content;
@@ -351,7 +351,7 @@ add_filter( 'block_editor_settings_all', 'twentigone_add_transparent_header_edit
  * @return string SVG markup.
  */
 function twentigone_get_logo_svg_filter() {
-	$svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position:absolute;left:-9999px;overflow:hidden">
+	$svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow:hidden;">
 		<filter id="tw-logo-color" color-interpolation-filters="sRGB" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" filterRes="1024 1024">
 			<feFlood flood-color="var(--tw-header-transparent-color)" result="flood"/>
 			<feComposite in="flood" in2="SourceAlpha" operator="in" result="tinted"/>
@@ -394,6 +394,7 @@ function twentigone_filter_portfolio_templates( $query_result ) {
 
 	$portfolio_templates = array(
 		'single-portfolio',
+		'archive-portfolio',
 		'taxonomy-portfolio_category',
 		'taxonomy-portfolio_tag',
 	);
@@ -408,6 +409,78 @@ function twentigone_filter_portfolio_templates( $query_result ) {
 	);
 }
 add_filter( 'get_block_templates', 'twentigone_filter_portfolio_templates' );
+
+/**
+ * Adds the portfolio archive template as a fallback for portfolio taxonomy templates.
+ *
+ * Twentig One uses a single archive-portfolio.html template for all portfolio
+ * archives. This lets portfolio category and tag archives use that template
+ * when taxonomy-specific templates are not present.
+ *
+ * @param string[] $templates Template hierarchy.
+ * @return string[] Modified template hierarchy.
+ */
+function twentigone_portfolio_taxonomy_template_fallback( $templates ) {
+	if ( ! is_tax( array( 'portfolio_category', 'portfolio_tag' ) ) ) {
+		return $templates;
+	}
+
+	$fallback = 'archive-portfolio.php';
+	$slugs    = array(
+		'taxonomy-portfolio_category',
+		'taxonomy-portfolio_tag',
+	);
+
+	foreach ( $slugs as $slug ) {
+		$index = array_search( $slug . '.php', $templates, true );
+
+		if ( false !== $index ) {
+			if ( ! in_array( $fallback, $templates, true ) ) {
+				array_splice( $templates, $index + 1, 0, $fallback );
+			}
+
+			break;
+		}
+	}
+
+	return $templates;
+}
+add_filter( 'taxonomy_template_hierarchy', 'twentigone_portfolio_taxonomy_template_fallback', 1 );
+
+/**
+ * Prevents custom overlay submenus that open on click from closing on focusout.
+ *
+ * Keeps submenu toggle clicks working reliably, while preserving Core's
+ * focusout behavior outside the custom overlay.
+ *
+ * @param string $block_content Navigation block markup.
+ * @return string Filtered markup.
+ */
+function twentigone_disable_overlay_submenu_focusout_close( $block_content ) {
+	if ( ! str_contains( $block_content, 'disable-default-overlay' )
+		|| ! str_contains( $block_content, 'open-on-click' )
+	) {
+		return $block_content;
+	}
+
+	$overlay_start = strpos( $block_content, 'wp-block-navigation__overlay-container' );
+
+	if ( false === $overlay_start ) {
+		return $block_content;
+	}
+
+	$before_overlay = substr( $block_content, 0, $overlay_start );
+	$overlay_markup = substr( $block_content, $overlay_start );
+
+	$overlay_markup = str_replace(
+		' data-wp-on--focusout="actions.handleMenuFocusout"',
+		'',
+		$overlay_markup
+	);
+
+	return $before_overlay . $overlay_markup;
+}
+add_filter( 'render_block_core/navigation', 'twentigone_disable_overlay_submenu_focusout_close', 20 );
 
 /**
  * Filters the HTML output for the protected post password form.
@@ -837,9 +910,10 @@ require_once get_template_directory() . '/inc/welcome-notice.php';
 require_once get_template_directory() . '/plugin-update-checker/plugin-update-checker.php';
 
 $update_checker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
-	'https://github.com/twentig/twentig-one',
+	'https://twentig.com/updates/twentig-one',
 	get_template_directory() . '/style.css',
-	'twentig-one'
+	'twentig-one',
+	24
 );
 
-$update_checker->getVcsApi()->enableReleaseAssets();
+$update_checker->addQueryArgFilter( '__return_empty_array' );

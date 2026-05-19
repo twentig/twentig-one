@@ -13,7 +13,7 @@
 	<!-- wp:pattern {"slug":"twentigone/hidden-portfolio-related-heading"} /-->
 	<!-- wp:query {"query":{"perPage":3,"offset":0,"postType":"portfolio","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"twSinglePostsFilter":"same-category"},"namespace":"twentig/portfolio-list","align":"wide"} -->
 	<div class="wp-block-query alignwide">
-		<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"grid","columnCount":3},"twColumnWidth":"large","className":"tw-md-columns-2"} -->
+		<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"grid","columnCount":3},"className":"tw-md-columns-2"} -->
 			<!-- wp:group {"style":{"dimensions":{"minHeight":"100%"}},"backgroundColor":"base-2","twStretchedLink":true} -->
 			<div class="wp-block-group has-base-2-background-color has-background tw-stretched-link" style="min-height:100%">
 				<!-- wp:post-featured-image {"aspectRatio":"3/2","sizeSlug":"large","useFirstImageFromPost":true,"twHover":"zoom"} /-->

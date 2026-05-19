@@ -10,7 +10,7 @@
 
 <!-- wp:query {"query":{"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"perPage":12},"align":"wide"} -->
 <div class="wp-block-query alignwide">
-	<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"grid","columnCount":3},"twColumnWidth":"large"} -->
+	<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"300px"}} -->
 		<!-- wp:group {"style":{"spacing":{"blockGap":"0"},"dimensions":{"minHeight":"100%"}},"backgroundColor":"base-2","layout":{"type":"flex","orientation":"vertical"},"twStretchedLink":true} -->
 		<div class="wp-block-group has-base-2-background-color has-background tw-stretched-link" style="min-height:100%">
 			<!-- wp:post-featured-image {"aspectRatio":"3/2","width":"100%","sizeSlug":"large","useFirstImageFromPost":true,"className":"has-format-icon","twHover":"zoom"} /-->

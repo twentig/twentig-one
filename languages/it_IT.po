@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twentig One 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/twentig-one\n"
-"POT-Creation-Date: 2026-02-06T13:51:00+00:00\n"
-"PO-Revision-Date: 2026-02-06 15:54+0100\n"
+"POT-Creation-Date: 2026-05-15T10:01:06+00:00\n"
+"PO-Revision-Date: 2026-05-15 12:19+0200\n"
 "Last-Translator: Gemini\n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 "X-Domain: twentig-one\n"
 
 #. Theme Name of the theme
@@ -22,8 +22,8 @@ msgstr "Twentig One"
 
 #. Theme URI of the theme
 #: style.css
-msgid "https://twentig.com/theme/twentig-one/"
-msgstr "https://twentig.com/theme/twentig-one/"
+msgid "https://twentig.com/twentig-one/"
+msgstr "https://twentig.com/twentig-one/"
 
 #. Description of the theme
 #: style.css
@@ -63,92 +63,96 @@ msgstr "In colonna"
 msgid "Pill"
 msgstr "Forma di pillola"
 
-#: functions.php:605
+#: functions.php:604
 msgid "opens in a new tab"
 msgstr "si apre in una nuova scheda"
 
-#: functions.php:666
+#: functions.php:671
 msgctxt "Block pattern category"
 msgid "Utilities"
 msgstr "Utilità"
 
-#: functions.php:709
+#: functions.php:712
 msgid "Enable smooth scroll."
 msgstr "Abilita lo scorrimento fluido."
 
-#: functions.php:710
+#: functions.php:713
 msgid "Align overlay content to the center."
 msgstr "Allinea al centro il contenuto in sovrimpressione."
 
-#: functions.php:711
+#: functions.php:714
 msgid "Show post format icon."
 msgstr "Mostra l'icona del formato articolo."
 
-#: functions.php:712
+#: functions.php:715
 msgid "Show post format media (gallery, video, audio)."
 msgstr "Mostra i media del formato articolo (galleria, video, audio)."
 
-#: functions.php:713
+#: functions.php:716
 msgid "Make the header transparent."
 msgstr "Rendi trasparente l'header."
 
-#: functions.php:714
+#: functions.php:717
 msgid "Keep original logo colors on transparent header."
 msgstr "Mantieni i colori originali del logo nell'header trasparente."
 
-#: functions.php:795 patterns/hidden-404.php:19
+#: functions.php:871 patterns/hidden-404.php:19
 msgid "Home"
 msgstr "Home"
 
-#: functions.php:798 patterns/sidebar.php:18
+#: functions.php:874 patterns/sidebar.php:18
 msgid "About"
 msgstr "Chi siamo"
 
-#: functions.php:801
+#: functions.php:877
 msgid "Services"
 msgstr "Servizi"
 
-#: functions.php:804 patterns/index/hidden-blog-heading.php:10
+#: functions.php:880 patterns/index/hidden-blog-heading.php:10
 msgid "Blog"
 msgstr "Blog"
 
-#: functions.php:807
+#: functions.php:883
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: functions.php:810
+#: functions.php:886
 msgid "Work"
 msgstr "Lavori"
 
-#: functions.php:813
+#: functions.php:889
 msgid "Gallery"
 msgstr "Galleria"
 
-#: functions.php:816
+#: functions.php:892
 msgid "Info"
 msgstr "Informazioni"
 
-#: functions.php:819
+#: functions.php:895
 msgid "Company"
 msgstr "Azienda"
 
-#: functions.php:822
+#: functions.php:898
 msgid "Contact"
 msgstr "Contatti"
 
-#: inc/welcome-notice.php:49
+#: inc/welcome-notice.php:54
+msgid "Update Twentig"
+msgstr "Aggiorna Twentig"
+
+#: inc/welcome-notice.php:57
 msgid "Activate Twentig"
 msgstr "Attiva Twentig"
 
-#: inc/welcome-notice.php:52
+#: inc/welcome-notice.php:60
 msgid "Install Twentig"
 msgstr "Installa Twentig"
 
-#: inc/welcome-notice.php:66
+#: inc/welcome-notice.php:74
 msgid "Recommended plugin: Twentig"
 msgstr "Plugin consigliato: Twentig"
 
-#: inc/welcome-notice.php:67
+#: inc/welcome-notice.php:75
 msgid ""
 "Twentig is the perfect companion for your theme — featuring starter sites, "
 "enhanced blocks, patterns, and portfolio tools."
@@ -306,6 +310,67 @@ msgstr "Header con menu hamburger"
 msgctxt "Pattern title"
 msgid "Header with left navigation"
 msgstr "Header con navigazione a sinistra"
+
+#: patterns/headers/navigation-overlay-01.php
+msgctxt "Pattern title"
+msgid "Left 01"
+msgstr "Sinistra 01"
+
+#: patterns/headers/navigation-overlay-01.php:12
+#: patterns/headers/navigation-overlay-02.php:12
+#: patterns/headers/navigation-overlay-03.php:12
+#: patterns/headers/navigation-overlay-04.php:12
+#: patterns/headers/navigation-overlay-05.php:12
+#: patterns/headers/navigation-overlay-06.php:12
+#: patterns/headers/navigation-overlay-11.php:12
+#: patterns/headers/navigation-overlay-12.php:12
+#: patterns/headers/navigation-overlay-13.php:12
+msgid "Navigation Overlay"
+msgstr "Overlay di navigazione"
+
+#: patterns/headers/navigation-overlay-02.php
+msgctxt "Pattern title"
+msgid "Left 02"
+msgstr "Sinistra 02"
+
+#: patterns/headers/navigation-overlay-03.php
+msgctxt "Pattern title"
+msgid "Left 03"
+msgstr "Sinistra 03"
+
+#: patterns/headers/navigation-overlay-04.php
+msgctxt "Pattern title"
+msgid "Left 04"
+msgstr "Sinistra 04"
+
+#: patterns/headers/navigation-overlay-05.php
+msgctxt "Pattern title"
+msgid "Left 05"
+msgstr "Sinistra 05"
+
+#: patterns/headers/navigation-overlay-06.php
+msgctxt "Pattern title"
+msgid "Left 06"
+msgstr "Sinistra 06"
+
+#: patterns/headers/navigation-overlay-06.php:30
+msgid "Get started"
+msgstr "Inizia"
+
+#: patterns/headers/navigation-overlay-11.php
+msgctxt "Pattern title"
+msgid "Center 01"
+msgstr "Centrato 01"
+
+#: patterns/headers/navigation-overlay-12.php
+msgctxt "Pattern title"
+msgid "Center 02"
+msgstr "Centrato 02"
+
+#: patterns/headers/navigation-overlay-13.php
+msgctxt "Pattern title"
+msgid "Center 03"
+msgstr "Centrato 03"
 
 #: patterns/hidden-404.php
 msgctxt "Pattern title"
@@ -479,25 +544,6 @@ msgctxt "Pattern title"
 msgid "Portfolio archive"
 msgstr "Archivio portfolio"
 
-#: patterns/post-navigation-narrow.php patterns/post-navigation.php
-msgctxt "Pattern title"
-msgid "Post navigation"
-msgstr "Navigazione articoli"
-
-#: patterns/post-navigation-narrow.php:12
-#: patterns/post-navigation-narrow.php:13 patterns/post-navigation.php:11
-#: patterns/post-navigation.php:12
-msgid "Post navigation"
-msgstr "Navigazione articoli"
-
-#: patterns/post-navigation-narrow.php:18 patterns/post-navigation.php:17
-msgid "Previous"
-msgstr "Precedente"
-
-#: patterns/post-navigation-narrow.php:23 patterns/post-navigation.php:22
-msgid "Next"
-msgstr "Successivo"
-
 #: patterns/sidebar.php
 msgctxt "Pattern title"
 msgid "Sidebar content"
@@ -619,6 +665,29 @@ msgstr "Titolo articoli correlati"
 #: patterns/single-post/hidden-related-heading.php:10
 msgid "Related articles"
 msgstr "Articoli correlati"
+
+#: patterns/single-post/post-navigation-narrow.php
+#: patterns/single-post/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr "Navigazione articoli"
+
+#: patterns/single-post/post-navigation-narrow.php:12
+#: patterns/single-post/post-navigation-narrow.php:13
+#: patterns/single-post/post-navigation.php:11
+#: patterns/single-post/post-navigation.php:12
+msgid "Post navigation"
+msgstr "Navigazione articoli"
+
+#: patterns/single-post/post-navigation-narrow.php:18
+#: patterns/single-post/post-navigation.php:17
+msgid "Previous"
+msgstr "Precedente"
+
+#: patterns/single-post/post-navigation-narrow.php:23
+#: patterns/single-post/post-navigation.php:22
+msgid "Next"
+msgstr "Successivo"
 
 #: patterns/single-post/related-posts-2-column-covers.php
 msgctxt "Pattern title"
