@@ -45,6 +45,8 @@
 
 .wp-block-navigation.is-vertical .has-child.open-on-click:is(.has-child-selected,.is-selected) > .wp-block-navigation__submenu-container {
 	position: relative;
+	background-color: initial;
+	color: inherit;
 	border: 0;
 	width: 100% !important;
 	gap: 16px;
