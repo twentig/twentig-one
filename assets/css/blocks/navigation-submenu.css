@@ -53,6 +53,8 @@
 
 .disable-default-overlay.is-menu-open .wp-block-navigation-item.has-child.open-on-click > .wp-block-navigation-submenu {
 	position: relative;
+	background-color: initial;
+	color: inherit;
 	border: 0;
 	width: 100%;
 	opacity: 1;
