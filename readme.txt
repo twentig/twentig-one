@@ -17,8 +17,8 @@ Twentig One is a modern and powerful WordPress block theme designed for Full Sit
 
 * Add support for WordPress 7.1.
 * Define responsive viewport breakpoints in theme.json.
-* Improve gallery, video, and audio post format media in single posts and query layouts.
-* Improve standalone mode fallback styles.
+* Improve media display for gallery, video, and audio post formats in single posts and query layouts.
+* Improve fallback styles for standalone mode.
 * Update crisp shadow colors for better contrast.
 
 = 1.0.1 - 2026-05-19 =
