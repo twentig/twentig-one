@@ -1,11 +1,11 @@
-# Copyright (C) 2025 Twentig
-# This file is distributed under the GNU General Public License v2 or later.
+# Copyright (C) 2026 Twentig
+# This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Twentig One 0.1\n"
+"Project-Id-Version: Twentig One 1.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/twentig-one\n"
-"POT-Creation-Date: 2026-05-15T10:01:06+00:00\n"
-"PO-Revision-Date: 2026-05-15 12:16+0200\n"
+"POT-Creation-Date: 2026-08-12T15:29:44+00:00\n"
+"PO-Revision-Date: 2026-08-12 17:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -52,90 +52,102 @@ msgstr "Twentig"
 msgid "https://twentig.com"
 msgstr "https://twentig.com"
 
-#: functions.php:249
+#: functions.php:250
 msgid "Link"
 msgstr "Lien"
 
-#: functions.php:258
+#: functions.php:259
 msgid "Stack"
 msgstr "Empilement"
 
-#: functions.php:266
+#: functions.php:267
 msgid "Pill"
 msgstr "Pilule"
 
-#: functions.php:604
+#: functions.php:693
 msgid "opens in a new tab"
 msgstr "ouvre dans un nouvel onglet"
 
-#: functions.php:671
+#: functions.php:760
 msgctxt "Block pattern category"
 msgid "Utilities"
 msgstr "Utilitaires"
 
-#: functions.php:712
+#: functions.php:801
 msgid "Enable smooth scroll."
 msgstr "Activer le défilement fluide."
 
-#: functions.php:713
+#: functions.php:802
 msgid "Align overlay content to the center."
 msgstr "Centrer le contenu du calque superposé."
 
-#: functions.php:714
+#: functions.php:803
 msgid "Show post format icon."
 msgstr "Afficher l’icône du format de publication."
 
-#: functions.php:715
+#: functions.php:804
 msgid "Show post format media (gallery, video, audio)."
 msgstr "Afficher les médias du format de publication (galerie, vidéo, audio)."
 
-#: functions.php:716
+#: functions.php:805
 msgid "Make the header transparent."
 msgstr "Rendre l’entête transparent."
 
-#: functions.php:717
+#: functions.php:806
 msgid "Keep original logo colors on transparent header."
 msgstr "Conserver les couleurs originales du logo sur l’entête transparent."
 
-#: functions.php:871 patterns/hidden-404.php:19
+#: functions.php:887 patterns/hidden-404.php:19
 msgid "Home"
 msgstr "Accueil"
 
-#: functions.php:874 patterns/sidebar.php:18
+#: functions.php:890 patterns/sidebar.php:18
 msgid "About"
 msgstr "À propos"
 
-#: functions.php:877
+#: functions.php:893
 msgid "Services"
 msgstr "Services"
 
-#: functions.php:880 patterns/index/hidden-blog-heading.php:10
+#: functions.php:896 patterns/index/hidden-blog-heading.php:10
 msgid "Blog"
 msgstr "Blog"
 
-#: functions.php:883
+#: functions.php:899
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: functions.php:886
+#: functions.php:902
 msgid "Work"
 msgstr "Réalisations"
 
-#: functions.php:889
+#: functions.php:905
 msgid "Gallery"
 msgstr "Galerie"
 
-#: functions.php:892
+#: functions.php:908
 msgid "Info"
 msgstr "Info"
 
-#: functions.php:895
+#: functions.php:911
 msgid "Company"
 msgstr "Entreprise"
 
-#: functions.php:898
+#: functions.php:914
 msgid "Contact"
 msgstr "Contact"
+
+#: functions.php:917
+msgid "Overview"
+msgstr "Aperçu"
+
+#: functions.php:920
+msgid "Commissions"
+msgstr "Commandes"
+
+#: functions.php:923
+msgid "Personal"
+msgstr "Personnel"
 
 #: inc/welcome-notice.php:54
 msgid "Update Twentig"
@@ -1411,104 +1423,3 @@ msgstr "Page : Avec titre"
 msgctxt "Custom template name"
 msgid "Page: Transparent Header"
 msgstr "Page : Entête transparent"
-
-#, fuzzy
-#~| msgctxt "Pattern title"
-#~| msgid "Portfolio archive"
-#~ msgctxt "Pattern title"
-#~ msgid "Portfolio homepage"
-#~ msgstr "Archive de portfolio"
-
-#~ msgctxt "Pattern title"
-#~ msgid "Related projects: single-column 2-column"
-#~ msgstr "Projets connexes : 1 colonne 2 colonnes"
-
-#~ msgctxt "Pattern title"
-#~ msgid "Related posts: 2 column"
-#~ msgstr "Articles connexes : 2 colonnes"
-
-#~ msgctxt "Pattern title"
-#~ msgid "Hidden sidebar"
-#~ msgstr "Colonne latérale cachée"
-
-#, fuzzy
-#~| msgctxt "Template name"
-#~| msgid "Single Project"
-#~ msgctxt "Pattern title"
-#~ msgid "Single portfolio wide image"
-#~ msgstr "Projet seul"
-
-#, fuzzy
-#~| msgctxt "Template name"
-#~| msgid "Single Project"
-#~ msgctxt "Pattern title"
-#~ msgid "Single portfolio full-width image"
-#~ msgstr "Projet seul"
-
-#, fuzzy
-#~| msgctxt "Template name"
-#~| msgid "Single Project"
-#~ msgctxt "Pattern title"
-#~ msgid "Single portfolio overlap image"
-#~ msgstr "Projet seul"
-
-#, fuzzy
-#~| msgctxt "Template name"
-#~| msgid "Single Project"
-#~ msgctxt "Pattern title"
-#~ msgid "Single portfolio split"
-#~ msgstr "Projet seul"
-
-#, fuzzy
-#~| msgid "Portfolio"
-#~ msgctxt "Pattern title"
-#~ msgid "Portfolio 3 column"
-#~ msgstr "Portfolio"
-
-#~ msgid "Displays single project on your website."
-#~ msgstr "Affiche un projet unique sur votre site."
-
-#~ msgctxt "Template name"
-#~ msgid "Project Categories"
-#~ msgstr "Catégories de projets"
-
-#~ msgid "Displays portfolio categories."
-#~ msgstr "Affiche les catégories de projets."
-
-#~ msgctxt "Template name"
-#~ msgid "Project Tags"
-#~ msgstr "Etiquettes de projets"
-
-#~ msgid "Displays portfolio tags."
-#~ msgstr "Affiche les étiquettes de projets."
-
-#~ msgid "Activate Twentig to easily build your website."
-#~ msgstr "Activez Twentig pour créer facilement votre site internet."
-
-#~ msgid ""
-#~ "Twentig is a powerful plugin for block themes. We recommend you use it "
-#~ "together with your theme, they work perfectly together!"
-#~ msgstr ""
-#~ "Twentig est un plugin puissant pour les thèmes de blocs. Nous vous "
-#~ "recommandons de l'utiliser avec votre thème, ils fonctionnent "
-#~ "parfaitement ensemble !"
-
-#~ msgid "Learn more"
-#~ msgstr "En apprendre plus"
-
-#~ msgid "I’m a career coach from Amsterdam"
-#~ msgstr "Je suis coach de carrière à Amsterdam."
-
-#~ msgid "What we do"
-#~ msgstr "Ce que nous faisons"
-
-#, fuzzy
-#~| msgctxt "Template part name"
-#~| msgid "Footer"
-#~ msgctxt "Pattern title"
-#~ msgid "Footer 2"
-#~ msgstr "Pied de page"
-
-#~ msgctxt "Custom template name"
-#~ msgid "Page: Transparent Header White"
-#~ msgstr "Page: En tête transparent blanc"

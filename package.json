@@ -1,7 +1,7 @@
 {
 	"name": "twentig-one",
 	"private": true,
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A modern block theme for WordPress.",
 	"author": "Twentig",
 	"license": "GPL-3.0-or-later",
@@ -35,7 +35,7 @@
 		"@wordpress/browserslist-config": "^6.34.0",
 		"@wordpress/stylelint-config": "^23.30.0",
 		"cssnano": "^7.1.2",
-		"postcss": "^8.5.6",
+		"postcss": "^8.5.26",
 		"postcss-cli": "^11.0.1",
 		"rimraf": "^5.0.5",
 		"stylelint": "^16.11.0",

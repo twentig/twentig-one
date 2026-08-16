@@ -2,10 +2,10 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Twentig One 0.1.0\n"
+"Project-Id-Version: Twentig One 1.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/twentig-one\n"
-"POT-Creation-Date: 2026-05-15T10:01:06+00:00\n"
-"PO-Revision-Date: 2026-05-15 12:16+0200\n"
+"POT-Creation-Date: 2026-08-12T15:29:44+00:00\n"
+"PO-Revision-Date: 2026-08-12 17:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -51,91 +51,103 @@ msgstr "Twentig"
 msgid "https://twentig.com"
 msgstr "https://twentig.com"
 
-#: functions.php:249
+#: functions.php:250
 msgid "Link"
 msgstr "Enlace"
 
-#: functions.php:258
+#: functions.php:259
 msgid "Stack"
 msgstr "Pila"
 
-#: functions.php:266
+#: functions.php:267
 msgid "Pill"
 msgstr "Pastilla"
 
-#: functions.php:604
+#: functions.php:693
 msgid "opens in a new tab"
 msgstr "abre en una nueva pestaña"
 
-#: functions.php:671
+#: functions.php:760
 msgctxt "Block pattern category"
 msgid "Utilities"
 msgstr "Utilidades"
 
-#: functions.php:712
+#: functions.php:801
 msgid "Enable smooth scroll."
 msgstr "Activa el desplazamiento suave."
 
-#: functions.php:713
+#: functions.php:802
 msgid "Align overlay content to the center."
 msgstr "Alinea el contenido de la superposición al centro."
 
-#: functions.php:714
+#: functions.php:803
 msgid "Show post format icon."
 msgstr "Muestra el icono del formato de entrada."
 
-#: functions.php:715
+#: functions.php:804
 msgid "Show post format media (gallery, video, audio)."
 msgstr "Muestra el medio del formato de entrada (galería, vídeo o audio)."
 
-#: functions.php:716
+#: functions.php:805
 msgid "Make the header transparent."
 msgstr "Hace que la cabecera sea transparente."
 
-#: functions.php:717
+#: functions.php:806
 msgid "Keep original logo colors on transparent header."
 msgstr ""
 "Mantiene los colores originales del logotipo en la cabecera transparente."
 
-#: functions.php:871 patterns/hidden-404.php:19
+#: functions.php:887 patterns/hidden-404.php:19
 msgid "Home"
 msgstr "Inicio"
 
-#: functions.php:874 patterns/sidebar.php:18
+#: functions.php:890 patterns/sidebar.php:18
 msgid "About"
 msgstr "Acerca de"
 
-#: functions.php:877
+#: functions.php:893
 msgid "Services"
 msgstr "Servicios"
 
-#: functions.php:880 patterns/index/hidden-blog-heading.php:10
+#: functions.php:896 patterns/index/hidden-blog-heading.php:10
 msgid "Blog"
 msgstr "Blog"
 
-#: functions.php:883
+#: functions.php:899
 msgid "Portfolio"
 msgstr "Proyectos"
 
-#: functions.php:886
+#: functions.php:902
 msgid "Work"
 msgstr "Proyectos"
 
-#: functions.php:889
+#: functions.php:905
 msgid "Gallery"
 msgstr "Galería"
 
-#: functions.php:892
+#: functions.php:908
 msgid "Info"
 msgstr "Información"
 
-#: functions.php:895
+#: functions.php:911
 msgid "Company"
 msgstr "Empresa"
 
-#: functions.php:898
+#: functions.php:914
 msgid "Contact"
 msgstr "Contacto"
+
+#: functions.php:917
+msgid "Overview"
+msgstr "Visión general"
+
+#: functions.php:920
+msgid "Commissions"
+msgstr "Encargos"
+
+#: functions.php:923
+msgid "Personal"
+msgstr "Personal"
 
 #: inc/welcome-notice.php:54
 msgid "Update Twentig"
@@ -1411,19 +1423,3 @@ msgstr "Página: con título"
 msgctxt "Custom template name"
 msgid "Page: Transparent Header"
 msgstr "Página: cabecera transparente"
-
-#, fuzzy
-#~ msgid ""
-#~ "A modern, versatile block theme designed for full site editing. Features "
-#~ "comprehensive patterns, multiple style variations, and extensive block "
-#~ "customization options. Perfect for blogs, portfolios, photography sites, "
-#~ "and business websites."
-#~ msgstr ""
-#~ "Un tema de bloques moderno y versátil diseñado para la edición completa "
-#~ "del sitio. Cuenta con patrones integrales, múltiples variaciones de "
-#~ "estilo y amplias opciones de personalización de bloques. Perfecto para "
-#~ "blogs, porfolios, sitios de fotografía y sitios web de negocios."
-
-#~ msgctxt "Pattern title"
-#~ msgid "Related projects: single-column 2-column"
-#~ msgstr "Proyectos relacionados: una columna 2 columnas"

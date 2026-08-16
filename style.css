@@ -1,14 +1,14 @@
 /*
 Theme Name: Twentig One
 Theme URI: https://twentig.com/twentig-one/
-Update URI: https://github.com/twentig/twentig-one
+Update URI: https://twentig.com/twentig-one/
 Author: Twentig
 Author URI: https://twentig.com
 Description: Twentig One is a modern and powerful WordPress block theme designed for Full Site Editing. Featuring flexible templates, post formats, color presets, font pairings, and fluid typography & spacing, it’s the ideal foundation for any project. Pair it with the Twentig plugin for starter sites, patterns, and enhanced blocks to create a stunning website — no code needed.
 Requires at least: 6.9
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.0
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Domain Path: /languages
@@ -115,6 +115,12 @@ b, strong {
 	border-radius: 6px;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
 /* Forms & buttons */
 input,
 textarea {
@@ -141,11 +147,11 @@ input[type="reset"] {
 	margin-inline-end: 8px;
 }
 
-.wp-element-button {
+:where(.wp-element-button) {
 	transition: opacity 0.1s;
 }
 
-.wp-element-button:hover {
+:where(.wp-element-button):hover {
 	opacity: 0.85;
 }
 
@@ -185,6 +191,14 @@ figcaption.wp-element-caption {
 	vertical-align: bottom;
 }
 
+.wp-block-group.is-vertical > figure {
+	width: 100%;
+}
+
+.wp-block-group.is-vertical > .wp-block-embed {
+	flex: 0 1 auto;
+}
+
 /* Site layout & spacing */
 .wp-site-blocks {
 	display: flex;
@@ -212,7 +226,7 @@ header.wp-block-template-part {
 header.wp-block-template-part:has(>.is-position-sticky) {
 	position: sticky;
 	top: var(--wp-admin--admin-bar--height, 0px);
-	z-index: 10;
+	z-index: 101;
 }
 
 @media (min-width: 768px) {
@@ -239,7 +253,7 @@ footer.wp-block-template-part a[href="https://twentig.com"]:not(:hover,:focus) {
 	margin-top: 0;
 }
 
-.wp-block-post-content > :where(h1,h2,h3) {
+.wp-block-post-content > :is(h1,h2,h3) {
 	margin-top: var(--wp--custom--spacing--heading-margin);
 }
 
@@ -263,11 +277,11 @@ footer.wp-block-template-part a[href="https://twentig.com"]:not(:hover,:focus) {
 	margin-inline: var(--wp--preset--spacing--30) 0;
 }
 
-.is-layout-constrained:where(.wp-block-post-content,.wp-block-group.alignfull) > .alignleft {
+.is-layout-constrained:is(.wp-block-post-content,.wp-block-group.alignfull) > .alignleft {
 	margin-inline-start: max(0px, calc(0.5 * (var(--wp--custom--main-width) - var(--wp--style--global--content-size)) - var(--wp--style--root--padding-left)));
 }
 
-.is-layout-constrained:where(.wp-block-post-content,.wp-block-group.alignfull) > .alignright {
+.is-layout-constrained:is(.wp-block-post-content,.wp-block-group.alignfull) > .alignright {
 	margin-inline-end: max(0px, calc(0.5 * (var(--wp--custom--main-width) - var(--wp--style--global--content-size)) - var(--wp--style--root--padding-left)));
 }
 
@@ -295,6 +309,10 @@ footer.wp-block-template-part a[href="https://twentig.com"]:not(:hover,:focus) {
 
 .wp-block-post-content > *:last-child {
 	margin-bottom: 0;
+}
+
+.wp-block-accordion-panel[hidden] {
+	padding: 0 !important;
 }
 
 /* Lightbox */

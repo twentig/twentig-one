@@ -10,8 +10,8 @@
 
 <!-- wp:group {"fontSize":"small"} -->
 <div class="wp-block-group has-small-font-size">
-	<!-- wp:separator {"className":"is-style-wide tw-lg-hidden","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|65"}}}} -->
-	<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide tw-lg-hidden" style="margin-bottom:var(--wp--preset--spacing--65)"/>
+	<!-- wp:separator {"metadata":{"blockVisibility":{"viewport":{"desktop":false}}},"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|65"}}}} -->
+	<hr class="wp-block-separator has-alpha-channel-opacity" style="margin-bottom:var(--wp--preset--spacing--65)"/>
 	<!-- /wp:separator -->
 
 	<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0px"}}},"fontSize":"medium"} -->

@@ -64,6 +64,7 @@ if ( ! function_exists( 'twentigone_override_block_styles' ) ) :
 
 		foreach ( $override_blocks as $block_name ) {
 			$src        = "assets/css/blocks/{$block_name}{$suffix}.css";
+			wp_deregister_style( "wp-block-{$block_name}" );
 			wp_register_style(
 				"wp-block-{$block_name}",
 				get_parent_theme_file_uri( $src ),
@@ -78,7 +79,7 @@ if ( ! function_exists( 'twentigone_override_block_styles' ) ) :
 		}
 	}
 endif;
-add_action( 'wp_enqueue_scripts', 'twentigone_override_block_styles', 9 );
+add_action( 'init', 'twentigone_override_block_styles', 20 );
 
 if ( ! function_exists( 'twentigone_enqueue_block_styles' ) ) :
 	/**
@@ -352,7 +353,7 @@ add_filter( 'block_editor_settings_all', 'twentigone_add_transparent_header_edit
  */
 function twentigone_get_logo_svg_filter() {
 	$svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow:hidden;">
-		<filter id="tw-logo-color" color-interpolation-filters="sRGB" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox" filterRes="1024 1024">
+		<filter id="tw-logo-color" color-interpolation-filters="sRGB" x="0" y="0" width="1" height="1" filterUnits="objectBoundingBox">
 			<feFlood flood-color="var(--tw-header-transparent-color)" result="flood"/>
 			<feComposite in="flood" in2="SourceAlpha" operator="in" result="tinted"/>
 			<feMerge>
@@ -518,8 +519,9 @@ function twentigone_filter_post_featured_image_block( $block_content, $block ) {
 		return $block_content;
 	}
 
-	$use_media        = str_contains( $block_content, 'has-format-media' );
-	$show_format_icon = str_contains( $block_content, 'has-format-icon' );
+	$block_classes    = $block['attrs']['className'] ?? '';
+	$use_media        = str_contains( $block_classes, 'has-format-media' );
+	$show_format_icon = str_contains( $block_classes, 'has-format-icon' );
 
 	if ( ! $use_media && ! $show_format_icon ) {
 		return $block_content;
@@ -537,12 +539,21 @@ function twentigone_filter_post_featured_image_block( $block_content, $block ) {
 		'audio'   => '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" focusable="false"><path d="M20 12v6.25A1.75 1.75 0 0 1 18.25 20h-1.5A1.75 1.75 0 0 1 15 18.25v-3.5c0-.966.784-1.75 1.75-1.75H18v-1a6 6 0 1 0-12 0v1h1.25c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0 1 7.25 20h-1.5A1.75 1.75 0 0 1 4 18.25V12a8 8 0 0 1 16 0Z"></path></svg>',
 	);
 
-	$format_content   = '';
-	$found_block_name = '';
+	$format_content      = '';
+	$found_block_name    = '';
+	$is_primary_singular = false;
 
 	if ( $use_media ) {
 		$post = get_post();
 		if ( ! $post ) {
+			return $block_content;
+		}
+
+		$is_primary_singular = is_singular() && (int) $post->ID === (int) get_queried_object_id();
+
+		// On post listings, let a gallery's featured image take precedence over
+		// the gallery itself. If none is set, keep the gallery as the fallback.
+		if ( 'gallery' === $format && ! $is_primary_singular && has_post_thumbnail( $post ) ) {
 			return $block_content;
 		}
 
@@ -564,21 +575,25 @@ function twentigone_filter_post_featured_image_block( $block_content, $block ) {
 			return $block_content;
 		}
 
-		// On single posts, only look at the first block.
-		if ( is_singular() ) {
+		// For the primary singular post, only look at the first block.
+		if ( $is_primary_singular ) {
 			$blocks = array( $blocks[0] );
 		}
 
 		foreach ( $blocks as $content_block ) {
 			if ( in_array( $content_block['blockName'], $format_blocks[ $format ], true ) ) {
-				$format_content   = render_block( $content_block );
 				$found_block_name = $content_block['blockName'];
 
-				// Embed blocks need autoembed processing to convert URLs to actual embeds.
+				// Convert embed URLs before rendering so block render filters receive
+				// the same iframe markup they receive through the_content.
 				if ( 'core/embed' === $found_block_name ) {
 					global $wp_embed;
-					$format_content = $wp_embed->autoembed( $format_content );
+					$embedded_content              = $wp_embed->autoembed( $content_block['innerHTML'] );
+					$content_block['innerHTML']    = $embedded_content;
+					$content_block['innerContent'] = array( $embedded_content );
 				}
+
+				$format_content = render_block( $content_block );
 
 				break;
 			}
@@ -590,7 +605,7 @@ function twentigone_filter_post_featured_image_block( $block_content, $block ) {
 	}
 
 	// De-duplicate: Hide the media block from content if showing it as featured image.
-	if ( is_singular() && $found_block_name ) {
+	if ( $format_content && $is_primary_singular && $found_block_name ) {
 		add_filter( "render_block_{$found_block_name}", function ( $block_content, $block ) {
 			static $removed = false;
 			if ( $removed ) {
@@ -898,6 +913,15 @@ function twentigone_starter_pages() {
 		'contact' => array(
 			'title' => __( 'Contact', 'twentig-one' ),
 		),
+		'overview' => array(
+			'title' => __( 'Overview', 'twentig-one' ),
+		),
+		'commissions' => array(
+			'title' => __( 'Commissions', 'twentig-one' ),
+		),
+		'personal' => array(
+			'title' => __( 'Personal', 'twentig-one' ),
+		),
 	);
 	return $page_types;
 }
@@ -906,7 +930,7 @@ add_filter( 'twentig_page_types', 'twentigone_starter_pages' );
 /* Welcome notice */
 require_once get_template_directory() . '/inc/welcome-notice.php';
 
-/* GitHub Updater */
+/* Theme Updater */
 require_once get_template_directory() . '/plugin-update-checker/plugin-update-checker.php';
 
 $update_checker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(

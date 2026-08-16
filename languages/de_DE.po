@@ -2,10 +2,10 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Twentig One 0.1.0\n"
+"Project-Id-Version: Twentig One 1.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/twentig-one\n"
-"POT-Creation-Date: 2026-05-15T10:01:06+00:00\n"
-"PO-Revision-Date: 2026-05-15 12:12+0200\n"
+"POT-Creation-Date: 2026-08-12T15:29:44+00:00\n"
+"PO-Revision-Date: 2026-08-12 17:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -51,90 +51,102 @@ msgstr "Twentig"
 msgid "https://twentig.com"
 msgstr "https://twentig.com"
 
-#: functions.php:249
+#: functions.php:250
 msgid "Link"
 msgstr "Link"
 
-#: functions.php:258
+#: functions.php:259
 msgid "Stack"
 msgstr "Stapel"
 
-#: functions.php:266
+#: functions.php:267
 msgid "Pill"
 msgstr "Pillenform"
 
-#: functions.php:604
+#: functions.php:693
 msgid "opens in a new tab"
 msgstr "öffnet in neuem Tab"
 
-#: functions.php:671
+#: functions.php:760
 msgctxt "Block pattern category"
 msgid "Utilities"
 msgstr "Hilfselemente"
 
-#: functions.php:712
+#: functions.php:801
 msgid "Enable smooth scroll."
 msgstr "Sanftes Scrollen aktivieren."
 
-#: functions.php:713
+#: functions.php:802
 msgid "Align overlay content to the center."
 msgstr "Overlay-Inhalte zentriert ausrichten."
 
-#: functions.php:714
+#: functions.php:803
 msgid "Show post format icon."
 msgstr "Beitragsformat-Icon anzeigen."
 
-#: functions.php:715
+#: functions.php:804
 msgid "Show post format media (gallery, video, audio)."
 msgstr "Beitragsformat-Medien (Galerie, Video, Audio) anzeigen."
 
-#: functions.php:716
+#: functions.php:805
 msgid "Make the header transparent."
 msgstr "Header transparent machen."
 
-#: functions.php:717
+#: functions.php:806
 msgid "Keep original logo colors on transparent header."
 msgstr "Ursprüngliche Logofarben auf transparentem Header beibehalten."
 
-#: functions.php:871 patterns/hidden-404.php:19
+#: functions.php:887 patterns/hidden-404.php:19
 msgid "Home"
 msgstr "Start"
 
-#: functions.php:874 patterns/sidebar.php:18
+#: functions.php:890 patterns/sidebar.php:18
 msgid "About"
 msgstr "Über"
 
-#: functions.php:877
+#: functions.php:893
 msgid "Services"
 msgstr "Dienstleistungen"
 
-#: functions.php:880 patterns/index/hidden-blog-heading.php:10
+#: functions.php:896 patterns/index/hidden-blog-heading.php:10
 msgid "Blog"
 msgstr "Blog"
 
-#: functions.php:883
+#: functions.php:899
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: functions.php:886
+#: functions.php:902
 msgid "Work"
 msgstr "Arbeiten"
 
-#: functions.php:889
+#: functions.php:905
 msgid "Gallery"
 msgstr "Galerie"
 
-#: functions.php:892
+#: functions.php:908
 msgid "Info"
 msgstr "Info"
 
-#: functions.php:895
+#: functions.php:911
 msgid "Company"
 msgstr "Unternehmen"
 
-#: functions.php:898
+#: functions.php:914
 msgid "Contact"
 msgstr "Kontakt"
+
+#: functions.php:917
+msgid "Overview"
+msgstr "Übersicht"
+
+#: functions.php:920
+msgid "Commissions"
+msgstr "Auftragsarbeiten"
+
+#: functions.php:923
+msgid "Personal"
+msgstr "Persönliche Arbeiten"
 
 #: inc/welcome-notice.php:54
 msgid "Update Twentig"
@@ -1410,7 +1422,3 @@ msgstr "Seite: Mit Titel"
 msgctxt "Custom template name"
 msgid "Page: Transparent Header"
 msgstr "Seite: Transparenter Header"
-
-#~ msgctxt "Pattern title"
-#~ msgid "Related projects: single-column 2-column"
-#~ msgstr "Ähnliche Projekte: einspaltig & 2-spaltig"

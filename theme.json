@@ -3,6 +3,10 @@
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
+		"viewport": {
+			"mobile": "767px",
+			"tablet": "1023px"
+		},
 		"color": {
 			"defaultDuotone": false,
 			"defaultGradients": false,
@@ -337,7 +341,7 @@
 				{
 					"name": "Crisp",
 					"slug": "crisp",
-					"shadow": "0 0 0 2px #000, 6px 6px 0 2px #000"
+					"shadow": "0 0 0 2px var(--wp--preset--color--contrast), 6px 6px 0 2px var(--wp--preset--color--contrast)"
 				}
 			]
 		},
@@ -388,7 +392,10 @@
 				}
 			},
 			"core/gallery": {
-				"css": "--wp--style--gallery-gap-default:var(--wp--preset--spacing--15)"
+				"css": "--wp--style--gallery-gap-default:var(--wp--preset--spacing--15)",
+				"spacing": {
+					"blockGap": "var:preset|spacing|15"
+				}
 			},
 			"core/buttons": {
 				"spacing": {

@@ -1,9 +1,9 @@
 === Twentig One ===
 Contributors: twentig
 Requires at least: 6.9
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,6 +12,14 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Twentig One is a modern and powerful WordPress block theme designed for Full Site Editing. Featuring flexible templates, post formats, color presets, font pairings, and fluid typography & spacing, it's the ideal foundation for any project. Pair it with the Twentig plugin for starter sites, patterns, and enhanced blocks to create a stunning website - no code needed.
 
 == Changelog ==
+
+= 1.0.2 - 2026-08-17 =
+
+* Add support for WordPress 7.1.
+* Define responsive viewport breakpoints in theme.json.
+* Improve gallery, video, and audio post format media in single posts and query layouts.
+* Improve standalone mode fallback styles.
+* Update crisp shadow colors for better contrast.
 
 = 1.0.1 - 2026-05-19 =
 
@@ -27,7 +35,7 @@ Twentig One is a modern and powerful WordPress block theme designed for Full Sit
 
 = 1.0.0 - 2026-03-17 =
 
-* Initial release
+* Initial release.
 
 == Copyright ==
 
@@ -184,7 +192,7 @@ License: SIL Open Font License, Version 1.1, https://opensource.org/licenses/OFL
 Reference: https://gitlab.com/bonjour-monde/fonderie/syne-typeface
 Source: https://fonts.google.com/specimen/Syne
 
-Tiktok Sans
+TikTok Sans
 Copyright 2024 TikTok Inc
 License: SIL Open Font License, Version 1.1, https://opensource.org/licenses/OFL-1.1
 Reference: https://github.com/tiktok/TikTokSans
