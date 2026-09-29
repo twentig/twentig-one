@@ -593,6 +593,15 @@ function twentigone_filter_post_featured_image_block( $block_content, $block ) {
 					$content_block['innerContent'] = array( $embedded_content );
 				}
 
+				// Allow hidden videos to be used as featured media in query loops while remaining hidden in single posts.
+				if (
+					'video' === $format &&
+					! $is_primary_singular &&
+					false === ( $content_block['attrs']['metadata']['blockVisibility'] ?? null )
+				) {
+					unset( $content_block['attrs']['metadata']['blockVisibility'] );
+				}
+
 				$format_content = render_block( $content_block );
 
 				break;

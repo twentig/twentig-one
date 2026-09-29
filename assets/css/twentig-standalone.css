@@ -67,6 +67,10 @@
 	z-index: 2;
 }
 
+.wp-block-query .tw-stretched-link .wp-block-video:not(.minimal-controls):not(:has(video[controls])) {
+	z-index: 0;
+}
+
 .wp-block-media-text.is-image-fill > figure.wp-block-media-text__media img {
 	position: relative;
 	width: 100%;

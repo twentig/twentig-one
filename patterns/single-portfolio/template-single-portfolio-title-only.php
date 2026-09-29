@@ -15,6 +15,7 @@
 	<!-- wp:group {"metadata":{"name":"<?php esc_html_e( 'Hero', 'twentig-one' ); ?>"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|65"},"margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignfull" style="margin-bottom:var(--wp--preset--spacing--60);padding-top:var(--wp--preset--spacing--65)">
 		<!-- wp:post-title {"textAlign":"center","level":1} /-->
+		<!-- wp:post-excerpt {"textAlign":"center","className":"tw-text-balance","style":{"typography":{"lineHeight":"1.35"},"spacing":{"margin":{"top":"20px"}}},"fontSize":"large","twShowManualOnly":true} /-->
 	</div>
 	<!-- /wp:group -->
 	<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
