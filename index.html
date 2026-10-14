@@ -1,181 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Changelog — new features, improvements, and fixes." />
-  <title>Twentig One Changelog</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --primary: #1d1d1f;
-      --secondary: #6e6e73;
-      --rule: #d2d2d7;
-      --max-width: 700px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Changelog — new features, improvements, and fixes." />
+    <title>Twentig One Changelog</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --primary: #1d1d1f;
+        --secondary: #6e6e73;
+        --rule: #d2d2d7;
+        --max-width: 700px;
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--primary);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--primary);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 64px 24px;
-    }
-
-    .page-header {
-      margin-bottom: 64px;
-    }
-
-    h1 {
-      font-size: 28px;
-      line-height: 1.2;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin: 0 0 6px;
-      color: var(--primary);
-    }
-
-    .page-header p {
-      margin: 0;
-      color: var(--secondary);
-      font-size: 18px;
-    }
-
-    .entry {
-      padding-top: 48px;
-      padding-bottom: 48px;
-      border-top: 1px solid var(--rule);
-    }
-
-    .entry:first-of-type {
-      border-top: none;
-      padding-top: 0;
-    }
-
-    .entry:last-of-type {
-      padding-bottom: 0;
-    }
-
-    .entry .date {
-      font-size: 14px;
-      color: var(--secondary);
-      margin: 0 0 8px;
-    }
-
-    h2 {
-      font-size: 24px;
-      line-height: 1.2;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      margin: 0 0 20px;
-      color: var(--primary);
-    }
-
-    .entry ul {
-      margin: 0;
-      padding-left: 22px;
-    }
-
-    .entry li {
-      margin-bottom: 8px;
-      color: var(--primary);
-    }
-
-    .entry li:last-child {
-      margin-bottom: 0;
-    }
-
-
-    .entry li code {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
-        "Liberation Mono", monospace;
-      font-size: 0.9em;
-      padding: 1px 6px;
-      background: #f5f5f7;
-      border-radius: 4px;
-    }
-
-    @media (max-width: 600px) {
       .container {
-        padding: 64px 20px;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 64px 24px;
       }
+
       .page-header {
-        margin-bottom: 48px;
+        margin-bottom: 64px;
       }
+
+      h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin: 0 0 6px;
+        color: var(--primary);
+      }
+
+      .page-header p {
+        margin: 0;
+        color: var(--secondary);
+        font-size: 18px;
+      }
+
       .entry {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        border-top: 1px solid var(--rule);
       }
-    }
-  </style>
-</head>
-<body>
-  <main class="container">
-    <header class="page-header">
-      <h1>Twentig One Changelog</h1>
-      <p>New features, improvements, and fixes.</p>
-    </header>
 
-    <article class="entry">
-      <p class="date">September 29, 2026</p>
-      <h2>Version 1.0.3</h2>
-      <ul>
-        <li>Allow hidden videos in video-format posts to be used as featured media in query loops while remaining hidden in single posts.</li>
-        <li>Add title-only single-post template and next-only post navigation pattern.</li>
-        <li>Adjust portfolio and post navigation patterns.</li>
-      </ul>
-    </article>    
+      .entry:first-of-type {
+        border-top: none;
+        padding-top: 0;
+      }
 
-    <article class="entry">
-      <p class="date">August 17, 2026</p>
-      <h2>Version 1.0.2</h2>
-      <ul>
-        <li>Add support for WordPress 7.1.</li>
-        <li>Define responsive viewport breakpoints in <code>theme.json</code>.</li>
-        <li>Improve media display for gallery, video, and audio post formats in single posts and query layouts.</li>
-        <li>Improve fallback styles for standalone mode.</li>
-        <li>Update crisp shadow colors for better contrast.</li>
-      </ul>
-    </article>
+      .entry:last-of-type {
+        padding-bottom: 0;
+      }
 
-    <article class="entry">
-      <p class="date">May 19, 2026</p>
-      <h2>Version 1.0.1</h2>
-      <ul>
-        <li>Add overlay navigation patterns.</li>
-        <li>Add portfolio archive template and remove portfolio taxonomy templates.</li>
-        <li>Allow menu item descriptions.</li>
-        <li>Improve submenu display when set to Click in overlay navigation.</li>
-        <li>Improve lightbox gallery display.</li>
-        <li>Update portfolio and post grid pattern columns with the <code>minimumColumnWidth</code> setting.</li>
-        <li>Fix logo color filter enqueueing in transparent headers.</li>
-        <li>Add select element styles in <code>theme.json</code>.</li>
-        <li>Update theme update endpoint to twentig.com.</li>
-      </ul>
-    </article>
+      .entry .date {
+        font-size: 14px;
+        color: var(--secondary);
+        margin: 0 0 8px;
+      }
 
-    <article class="entry">
-      <p class="date">March 17, 2026</p>
-      <h2>Version 1.0.0</h2>
-      <ul>
-        <li>Initial release.</li>
-      </ul>
-    </article>
-  </main>
-</body>
+      h2 {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        margin: 0 0 20px;
+        color: var(--primary);
+      }
+
+      .entry ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      .entry li {
+        margin-bottom: 8px;
+        color: var(--primary);
+      }
+
+      .entry li:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry li code {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 0.9em;
+        padding: 1px 6px;
+        background: #f5f5f7;
+        border-radius: 4px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 64px 20px;
+        }
+        .page-header {
+          margin-bottom: 48px;
+        }
+        .entry {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <h1>Twentig One Changelog</h1>
+        <p>New features, improvements, and fixes.</p>
+      </header>
+
+      <article class="entry">
+        <p class="date">October 14, 2026</p>
+        <h2>Version 1.0.4</h2>
+        <ul>
+          <li>Improve scroll-up sticky header behavior.</li>
+          <li>Standardize Query Loop settings across post and portfolio patterns.</li>
+          <li>Remove extra whitespace from no-results messages in post patterns.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <p class="date">September 29, 2026</p>
+        <h2>Version 1.0.3</h2>
+        <ul>
+          <li>Allow hidden videos in video-format posts to be used as featured media in query loops while remaining hidden in single posts.</li>
+          <li>Add title-only single-post template and next-only post navigation pattern.</li>
+          <li>Adjust portfolio and post navigation patterns.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <p class="date">August 17, 2026</p>
+        <h2>Version 1.0.2</h2>
+        <ul>
+          <li>Add support for WordPress 7.1.</li>
+          <li>Define responsive viewport breakpoints in <code>theme.json</code>.</li>
+          <li>Improve media display for gallery, video, and audio post formats in single posts and query layouts.</li>
+          <li>Improve fallback styles for standalone mode.</li>
+          <li>Update crisp shadow colors for better contrast.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <p class="date">May 19, 2026</p>
+        <h2>Version 1.0.1</h2>
+        <ul>
+          <li>Add overlay navigation patterns.</li>
+          <li>Add portfolio archive template and remove portfolio taxonomy templates.</li>
+          <li>Allow menu item descriptions.</li>
+          <li>Improve submenu display when set to Click in overlay navigation.</li>
+          <li>Improve lightbox gallery display.</li>
+          <li>Update portfolio and post grid pattern columns with the <code>minimumColumnWidth</code> setting.</li>
+          <li>Fix logo color filter enqueueing in transparent headers.</li>
+          <li>Add select element styles in <code>theme.json</code>.</li>
+          <li>Update theme update endpoint to twentig.com.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <p class="date">March 17, 2026</p>
+        <h2>Version 1.0.0</h2>
+        <ul>
+          <li>Initial release.</li>
+        </ul>
+      </article>
+    </main>
+  </body>
 </html>
