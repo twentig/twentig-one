@@ -41,6 +41,9 @@ if ( ! function_exists( 'twentigone_support' ) ) :
 		// Define as a twentig theme.
 		add_theme_support( 'twentig-theme' );
 
+		// The theme provides its own sticky header markup and assets.
+		remove_filter( 'render_block_core/template-part', 'twentig_filter_part_block', 11 );
+
 		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
 	}
@@ -292,10 +295,9 @@ endif;
 add_action( 'enqueue_block_editor_assets', 'twentigone_block_editor_scripts' );
 
 /**
- * Filters the template part block output for transparent header support.
+ * Filters header template parts for sticky and transparent header support.
  *
- * Enqueues transparent header styles and injects SVG filter for logo color
- * replacement when the header-transparent class is detected.
+ * Enqueues header assets and adds scroll-up directives and the logo color filter.
  *
  * @param string $block_content The block content.
  * @param array  $block         The full block, including name and attributes.
@@ -303,19 +305,52 @@ add_action( 'enqueue_block_editor_assets', 'twentigone_block_editor_scripts' );
  */
 function twentigone_filter_template_part_block( $block_content, $block ) {
 	if ( ( $block['attrs']['tagName'] ?? null ) !== 'header'
-		|| ! str_contains( $block_content, 'header-transparent' ) ) {
+		&& ( $block['attrs']['slug'] ?? null ) !== 'header' ) {
 		return $block_content;
 	}
 
-	wp_enqueue_style( 'twentigone-header-transparent' );
+	$is_transparent = str_contains( $block_content, 'header-transparent' );
+	if ( $is_transparent ) {
+		wp_enqueue_style( 'twentigone-header-transparent' );
 
-	if ( str_contains( $block_content, 'site-logo' ) || is_customize_preview() ) {
-		add_action( 'wp_body_open', 'twentigone_output_logo_svg_filter' );
+		if ( str_contains( $block_content, 'site-logo' ) || is_customize_preview() ) {
+			add_action( 'wp_body_open', 'twentigone_output_logo_svg_filter' );
+		}
 	}
 
-	return $block_content;
+	if ( ! str_contains( $block_content, 'tw-sticky-scroll-up' ) ) {
+		return $block_content;
+	}
+
+	$tag_processor = new WP_HTML_Tag_Processor( $block_content );
+	if ( ! $tag_processor->next_tag( 'header' ) ) {
+		return $block_content;
+	}
+
+	$suffix  = SCRIPT_DEBUG ? '' : '.min';
+	$version = wp_get_theme( get_template() )->get( 'Version' );
+
+	wp_enqueue_script_module(
+		'twentigone-header-sticky',
+		get_parent_theme_file_uri( "assets/js/header-sticky{$suffix}.js" ),
+		array( '@wordpress/interactivity' ),
+		$version
+	);
+
+	$tag_processor->add_class( 'tw-sticky-scroll-up-header' );
+	$tag_processor->set_attribute( 'data-wp-interactive', 'twentigone/sticky-header' );
+	$tag_processor->set_attribute( 'data-wp-init', 'callbacks.init' );
+	$tag_processor->set_attribute( 'data-wp-on-document--scroll', 'callbacks.handleScroll' );
+	$tag_processor->set_attribute( 'data-wp-class--is-hidden', 'state.isHidden' );
+	$tag_processor->set_attribute( 'data-wp-class--is-sticky', 'state.isSticky' );
+	$tag_processor->set_attribute( 'data-wp-class--has-revealed', 'state.hasRevealed' );
+	if ( $is_transparent ) {
+		$tag_processor->set_attribute( 'data-wp-class--tw-header-opaque', 'state.hasRevealed' );
+	}
+
+	return $tag_processor->get_updated_html();
 }
-add_filter( 'render_block_core/template-part', 'twentigone_filter_template_part_block', 10, 2 );
+add_filter( 'render_block_core/template-part', 'twentigone_filter_template_part_block', 11, 2 );
 
 /**
  * Adds transparent header assets to the block editor.

@@ -3,7 +3,7 @@ Contributors: twentig
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,6 +12,12 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Twentig One is a modern and powerful WordPress block theme designed for Full Site Editing. Featuring flexible templates, post formats, color presets, font pairings, and fluid typography & spacing, it's the ideal foundation for any project. Pair it with the Twentig plugin for starter sites, patterns, and enhanced blocks to create a stunning website - no code needed.
 
 == Changelog ==
+
+= 1.0.4 - 2026-10-14 =
+
+* Improve scroll-up sticky header behavior.
+* Standardize Query Loop settings across post and portfolio patterns.
+* Remove extra whitespace from no-results messages in post patterns.
 
 = 1.0.3 - 2026-09-29 =
 

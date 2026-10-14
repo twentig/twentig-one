@@ -34,8 +34,9 @@
 		if ( header !== null ) {
 			const header_styles = window.getComputedStyle( header );
 			const position = header_styles.getPropertyValue( 'position' );
+			const stickyScrollUp = header.classList.contains( 'tw-sticky-scroll-up-header' );
 
-			if ( ( 'sticky' === position || 'fixed' === position ) ) {
+			if ( ( 'sticky' === position || 'fixed' === position || stickyScrollUp ) ) {
 				const hasAnchorLinks = document.querySelectorAll( 'a[href^="#"]' ).length > 0;
 				if ( hasAnchorLinks ) {
 					document.documentElement.style.setProperty( '--tw-header-height', header.clientHeight + 'px' );
@@ -53,7 +54,8 @@
 				}
 			}
 
-			if ( 'fixed' === position && header.classList.contains( 'header-transparent' ) ) {
+			// Scroll-up opacity is bound to the reveal state in functions.php.
+			if ( ! stickyScrollUp && 'fixed' === position && header.classList.contains( 'header-transparent' ) ) {
 				const scrollTop = window.scrollY;
 				if ( scrollTop > 1 ) {
 					header.classList.add( 'tw-header-opaque' );

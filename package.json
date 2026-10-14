@@ -1,7 +1,7 @@
 {
 	"name": "twentig-one",
 	"private": true,
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A modern block theme for WordPress.",
 	"author": "Twentig",
 	"license": "GPL-3.0-or-later",
@@ -27,7 +27,7 @@
 		"clean": "rimraf --glob style.min.css \"assets/css/**/*.min.css\" \"assets/js/**/*.min.js\"",
 		"prebuild:css": "npm run clean",
 		"build:css": "postcss style.css -o style.min.css --no-map && postcss assets/css/*.css -d assets/css/ --ext min.css --no-map && postcss assets/css/blocks/*.css -d assets/css/blocks/ --ext min.css --no-map",
-		"build:js": "terser assets/js/theme.js -o assets/js/theme.min.js --compress --mangle",
+		"build:js": "terser assets/js/theme.js -o assets/js/theme.min.js --compress --mangle && terser assets/js/header-sticky.js -o assets/js/header-sticky.min.js --module --compress --mangle",
 		"lint:css": "stylelint \"**/*.css\" --ignore-path .gitignore --ignore-pattern \"**/*.min.css\" --ignore-pattern \"plugin-update-checker/**\"",
 		"lint:css:fix": "stylelint \"**/*.css\" --ignore-path .gitignore --ignore-pattern \"**/*.min.css\" --ignore-pattern \"plugin-update-checker/**\" --fix"
 	},

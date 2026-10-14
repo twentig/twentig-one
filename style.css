@@ -8,7 +8,7 @@ Description: Twentig One is a modern and powerful WordPress block theme designed
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 8.0
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Domain Path: /languages
@@ -227,6 +227,32 @@ header.wp-block-template-part:has(>.is-position-sticky) {
 	position: sticky;
 	top: var(--wp-admin--admin-bar--height, 0px);
 	z-index: 101;
+}
+
+header.wp-block-template-part.tw-sticky-scroll-up-header {
+	position: relative;
+	top: auto;
+	transition: none;
+}
+
+header.wp-block-template-part.tw-sticky-scroll-up-header.is-sticky {
+	position: sticky;
+	top: var(--wp-admin--admin-bar--height, 0px);
+}
+
+header.wp-block-template-part.tw-sticky-scroll-up-header.has-revealed {
+	transition: transform 0.3s;
+}
+
+html:not(.has-modal-open) header.wp-block-template-part.tw-sticky-scroll-up-header.is-hidden {
+	transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	header.wp-block-template-part.tw-sticky-scroll-up-header.has-revealed {
+		transition: none;
+	}
 }
 
 @media (min-width: 768px) {

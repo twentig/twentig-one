@@ -10,6 +10,27 @@ header.header-transparent:has(>.is-position-sticky) {
 	position: fixed;
 }
 
+/* Scroll-up headers leave with the hero before returning over the page. */
+header.wp-block-template-part.header-transparent.tw-sticky-scroll-up-header {
+	position: absolute;
+	top: var(--wp-admin--admin-bar--height, 0px);
+}
+
+header.wp-block-template-part.header-transparent.tw-sticky-scroll-up-header.is-sticky {
+	position: fixed;
+}
+
+header.header-transparent > .wp-block-group {
+	transition: background-color 0.15s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	header.header-transparent > .wp-block-group {
+		transition: none;
+	}
+}
+
 header.header-transparent:not(.tw-header-opaque) > .wp-block-group {
 	background-color: transparent !important;
 	box-shadow: none !important;

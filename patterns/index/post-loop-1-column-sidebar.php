@@ -14,7 +14,7 @@
 	<div class="wp-block-column">
 		<!-- wp:group -->
 		<div class="wp-block-group">
-			<!-- wp:query {"query":{"pages":0,"offset":"2","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"perPage":8} } -->
+			<!-- wp:query {"query":{"perPage":8,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
 			<div class="wp-block-query">
 				<!-- wp:post-template -->
 					<!-- wp:group {"twStretchedLink":true} -->
